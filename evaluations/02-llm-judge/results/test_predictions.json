@@ -1,0 +1,874 @@
+[
+  {
+    "trace_id": "13_2",
+    "query": "Vegan chocolate cake for my birthday but I'm also trying to avoid refined sugar",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegan diet. All ingredients in the crust (almonds/walnuts, dates, salt) and the filling (avocados, maple syrup, cocoa powder, coconut oil, vanilla extract) are plant-based and do not contain any animal products. The recipe correctly avoids dairy, eggs, honey, and meat. The suggestions in the \"Tips & Substitutions\" section (using walnuts/pecans or agave nectar) and the \"Optional Add-ons\" section (fresh berries) are also entirely vegan. There are no violations anywhere in the response."
+  },
+  {
+    "trace_id": "2_3",
+    "query": "Need a quick gluten-free breakfast. I hate eggs though.",
+    "dietary_restriction": "gluten-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe properly adheres to the gluten-free restriction throughout. The most critical ingredient, oats, is specified as \"certified gluten-free rolled oats,\" which correctly addresses the primary source of potential gluten contamination in oatmeal. All other ingredients listed (water, milk, berries, nuts, maple syrup, honey, salt, cinnamon) are naturally gluten-free. The suggested substitutions (brown sugar, banana, various seeds) and optional add-ons (peanut butter, almond butter) are also gluten-free in their common, default forms, passing the \"default version\" test from Policy Rule 2. The entire response is compliant."
+  },
+  {
+    "trace_id": "31_2",
+    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. ",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for a vegan Shepherd's Pie. I have evaluated all sections of the response. The main ingredients in the potato topping (potatoes, plant-based milk, vegan butter/olive oil) and the savory filling (lentils, vegetables, vegetable broth, soy sauce) are all plant-based and therefore vegan. The recipe specifically calls for vegan-compliant items like \"plant-based milk\" and \"vegan butter.\" The use of soy sauce is compliant with a vegan diet, as the default version is made from soybeans and does not contain animal products. All instructions, tips, substitutions (canned lentils, sweet potatoes), and optional add-ons (mushrooms) are also fully compliant with a vegan diet. No animal products are mentioned or suggested anywhere in the response."
+  },
+  {
+    "trace_id": "37_2",
+    "query": "Sugar-free dessert that doesn't taste like sadness",
+    "dietary_restriction": "sugar-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the sugar-free restriction throughout. The main ingredients list avoids all forms of added sugar (e.g., granulated sugar, brown sugar, honey, maple syrup), relying only on the natural sweetness of the apples. The Tips & Substitutions section suggests coconut oil as an alternative to butter, which is also sugar-free. The Optional Add-ons section suggests \"plain Greek yogurt.\" Per the 'default version' test (Policy Rule 2), the most common version of \"plain\" yogurt does not contain added sugar, making it a compliant suggestion. There are no violations in any part of the response."
+  },
+  {
+    "trace_id": "22_1",
+    "query": "I'm diabetic but I want to make a fruit cake for Christmas. My grandmother's recipe has tons of sugar and dried fruit but it's tradition and I can't j",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails to adhere to the 'diabetic-friendly' dietary restriction for two main reasons.\n\nFirst, the core ingredients include a significant amount of high-glycemic components. It calls for a combination of \u00be cup of all-purpose flour (a refined carbohydrate) and one full cup of high-sugar dried fruits (\u00bd cup dried apricots and \u00bd cup dried cranberries). Dried fruits are very concentrated in sugar and, along with the refined flour, can contribute to a significant blood sugar spike, which is contrary to the goal of a diabetic-friendly recipe.\n\nSecond, and more definitively, the \"Tips & Substitutions\" section contains a non-compliant suggestion. It states, \"If you don't have whole wheat flour, you can use all all-purpose flour...\" This suggests replacing the higher-fiber whole wheat flour entirely with a refined carbohydrate, which would make the cake even less suitable for a person with diabetes. Per Policy Rule 5, suggesting a non-compliant substitution results in a FAIL."
+  },
+  {
+    "trace_id": "17_1",
+    "query": "I want paleo bread but every recipe I've tried is terrible",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "I have reviewed the entire recipe response against the paleo dietary restriction. The paleo diet excludes grains, legumes, dairy, refined sugar, and processed foods.\n\n1.  **Main Ingredients**: All ingredients are paleo-compliant. It uses almond flour and coconut flour instead of grains. It uses olive oil, which is a compliant fat. It has no dairy, no legumes, and no refined sugar. Psyllium husk is a seed husk and is widely accepted on a paleo diet as a fiber and binder.\n2.  **Steps**: The preparation method (mixing and baking) is compliant.\n3.  **Tips & Substitutions**: The suggested oil substitutions (melted coconut oil, avocado oil) are both paleo-compliant.\n4.  **Optional Add-ons**: The suggestion to add dried herbs (rosemary, Italian seasoning) is also paleo-compliant.\n\nThe recipe successfully avoids all restricted food groups throughout the entire response, including all optional sections and tips."
+  },
+  {
+    "trace_id": "33_1",
+    "query": "I'm dairy-free but pregnant and craving ice cream constantly",
+    "dietary_restriction": "dairy-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the dairy-free restriction. The core ingredients are bananas and an optional splash of specified \"dairy-free milk (like almond, soy, or oat).\" The preparation method does not introduce any dairy. The Tips & Substitutions section is also compliant. The Optional Add-ons suggest peanut butter, almond butter, or sun-seed butter, all of which are dairy-free in their standard, common forms, thus passing the \"default version\" test (Policy Rule 2). There are no violations in any part of the response."
+  },
+  {
+    "trace_id": "13_1",
+    "query": "Vegan chocolate cake for my birthday but I'm also trying to avoid refined sugar",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the vegan dietary restriction. All ingredients listed for both the cake and the frosting are plant-based. The recipe correctly uses oil and plant-based milk instead of dairy, and a combination of baking soda and vinegar for leavening instead of eggs. It also uses maple syrup as a sweetener instead of honey. The \"Tips & Substitutions\" section suggests other compliant vegan ingredients (coconut oil, oat milk), and the \"Optional Add-ons\" (fresh berries) are also vegan. There are no violations of the vegan diet anywhere in the response."
+  },
+  {
+    "trace_id": "58_2",
+    "query": "Paleo spaghetti and meatballs",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the Paleo diet. It correctly avoids all restricted food groups. It uses zucchini noodles instead of grain-based pasta. The meatballs are bound with almond flour, a grain-free alternative to breadcrumbs. The sauce is made from tomatoes and spices, with no added sugar. There is no dairy, no legumes, and no processed foods. All ingredients in the main recipe, as well as the suggestions in the \"Tips & Substitutions\" and \"Optional Add-ons\" sections, are Paleo-friendly."
+  },
+  {
+    "trace_id": "21_5",
+    "query": "Raw vegan dessert for a potluck that won't weird people out",
+    "dietary_restriction": "raw vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe contains multiple ingredients and preparation methods that violate the raw vegan dietary restriction.\n\n1.  **Cocoa Powder**: The recipe calls for \"unsweetened cocoa powder.\" Standard cocoa powder is made from cacao beans that have been roasted at high temperatures, well exceeding the 118\u00b0F (48\u00b0C) limit for a raw diet. A compliant recipe must specify \"raw cacao powder.\" Per Policy Rule 2, because the default version of this ingredient is non-compliant, this is a FAIL.\n\n2.  **Vanilla Extract**: The recipe uses \"vanilla extract.\" Standard vanilla extract is made with alcohol, which is produced through high-heat distillation. This process makes it a non-raw ingredient. A raw-compliant alternative, such as vanilla bean powder or alcohol-free, cold-processed vanilla, should have been used. This is another violation of Policy Rule 2.\n\n3.  **Soaking Method**: The \"Tips & Substitutions\" section suggests that if dates are dry, one should \"soak them in hot water for 10 minutes.\" Standard hot water from a tap or kettle is significantly hotter than 118\u00b0F (48\u00b0C), which would effectively cook the dates and violate the raw diet rule. Per Policy Rule 4, a cooking method violation results in a FAIL."
+  },
+  {
+    "trace_id": "6_4",
+    "query": "Paleo lunch that doesn't involve any nuts. but i can eat almonds - I'm allergic",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the Paleo diet, which excludes grains, legumes, dairy, refined sugar, and processed foods. All ingredients listed (tuna, avocado, celery, onion, lemon juice, salt, pepper) are compliant. The recipe smartly uses avocado in place of mayonnaise, which often contains non-Paleo oils or sugar. The serving suggestions (lettuce cups, cucumber, bell peppers) and all items in the 'Tips & Substitutions' (canned salmon, chicken, chives, lime juice) and 'Optional Add-ons' (dill, parsley) sections are also fully compliant with Paleo principles. The entire response is free of any violations."
+  },
+  {
+    "trace_id": "13_3",
+    "query": "Vegan chocolate cake for my birthday but I'm also trying to avoid refined sugar",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the vegan dietary restriction. All ingredients listed in the main recipe for both the cake and the frosting are plant-based. The recipe correctly substitutes traditional animal products with vegan alternatives: vegetable oil/coconut oil for butter, plant-based milk for dairy milk, a combination of baking soda and vinegar for eggs, and maple syrup instead of honey. The \"Tips & Substitutions\" section suggests only vegan-compliant alternatives (whole wheat flour, agave nectar, water). The \"Optional Add-ons\" section also suggests a vegan ingredient (sea salt). There are no violations of the vegan diet anywhere in the response."
+  },
+  {
+    "trace_id": "56_4",
+    "query": "Whole30 comfort food that actually comforts",
+    "dietary_restriction": "whole30",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the Whole30 dietary restriction. All ingredients listed are permitted: sweet potatoes, ghee/olive oil, unsweetened nut milk, compliant ground meats, vegetables (excluding non-compliant ones like corn and peas), and compliant seasonings. The bot correctly specifies the need for unsweetened almond/coconut milk and sugar-free beef broth, demonstrating a proper understanding of common pitfalls. The \"Tips & Substitutions\" section is also fully compliant. It correctly suggests other Whole30-approved meats (turkey, lamb), correctly notes that regular potatoes (like russets) are now allowed on the Whole30 program, and correctly warns against using frozen vegetable mixes that contain non-compliant legumes like peas and corn. The optional add-on (rosemary) is also compliant. There are no violations in any part of the response."
+  },
+  {
+    "trace_id": "59_4",
+    "query": "Nut-free lunch that's safe for my kid's school",
+    "dietary_restriction": "nut-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provided is for Cheesy Chicken Quesadillas. All ingredients listed in the main recipe \u2014 flour tortillas, cooked chicken, Cheddar/Monterey Jack cheese, and vegetable oil/butter \u2014 are inherently nut-free. The 'Tips & Substitutions' section suggests using black beans or other types of cheese like Colby or a Mexican cheese blend, all of which are also nut-free. The 'Optional Add-ons' section suggests corn or bell peppers, which are also compliant. There are no ingredients or suggestions anywhere in the response that contain or commonly contain nuts."
+  },
+  {
+    "trace_id": "25_2",
+    "query": "Low-carb pasta substitute that my Italian grandmother won't disown me for",
+    "dietary_restriction": "low-carb",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a low-carb diet. It uses zucchini noodles as a substitute for high-carb pasta. All core ingredients, including zucchini, shrimp, olive oil, garlic, and herbs, are very low in carbohydrates. The suggested serving topping, Parmesan cheese, is a hard cheese that is also very low in carbs. The substitutions (chicken) and optional add-ons (cherry tomatoes) are also low-carb and appropriate for this dietary restriction. The entire response consistently adheres to the principles of a low-carb diet."
+  },
+  {
+    "trace_id": "30_1",
+    "query": "Keto meal that doesn't make me feel gross",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the keto dietary restriction. All ingredients listed are low-carb and appropriate for a keto diet. The main components are salmon (high fat, high protein, zero carbs), asparagus (a low-carb vegetable), olive oil, and butter (pure fats). The aromatics like garlic and lemon are used in small quantities and contribute minimal carbohydrates. The 'Tips & Substitutions' section suggests swapping asparagus for broccoli, which is also a low-carb vegetable. The 'Optional Add-ons' section suggests red pepper flakes, which have negligible carbs. There are no hidden sugars, grains, or high-carb ingredients anywhere in the entire response."
+  },
+  {
+    "trace_id": "42_5",
+    "query": "I want something light but filling",
+    "dietary_restriction": "low-carb",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The main recipe for salmon and asparagus is compliant with a low-carb diet, as the core ingredients (salmon, asparagus, olive oil, seasonings) are all low in carbohydrates. However, the \"Optional Add-ons\" section suggests serving the meal with \"a side of quick-cooking rice, quinoa, or some crusty bread.\" All three of these suggestions\u2014rice, quinoa, and bread\u2014are high-carbohydrate foods that are not suitable for a low-carb diet. Per Policy Rule 1, suggesting non-compliant ingredients in an optional capacity constitutes a failure."
+  },
+  {
+    "trace_id": "50_2",
+    "query": "Something that feels indulgent but isn't terrible for me",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is not diabetic-friendly because its primary ingredient is '1 lb (16 oz) short pasta, like penne or rigatoni.' Standard pasta made from refined wheat flour is a high-carbohydrate food with a high glycemic index, which can cause a significant spike in blood sugar levels. A diabetic-friendly diet requires controlled carbohydrates and limited refined carbs. A single serving of this recipe (1/4 of the total) would contain a very large amount of refined carbohydrates from the pasta alone, making it unsuitable for most people managing diabetes. The recipe should have specified a low-glycemic alternative, such as whole wheat pasta (in a controlled portion), or a non-grain pasta like those made from chickpeas, lentils, or edamame."
+  },
+  {
+    "trace_id": "4_3",
+    "query": "I'm dairy-free and also can't stand the taste of coconut milk. What dessert can I make?",
+    "dietary_restriction": "dairy-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the dairy-free restriction. All ingredients listed in the main recipe are naturally dairy-free (avocado, cocoa powder, maple syrup, vanilla, salt). The recipe explicitly calls for a non-dairy milk (almond, soy, or oat). The \"Tips & Substitutions\" section is also compliant, suggesting agave nectar (dairy-free) as a swap for maple syrup. Crucially, the \"Optional Add-ons\" section suggests topping with \"dairy-free chocolate shavings,\" demonstrating awareness that standard chocolate often contains dairy and correctly guiding the user to a compliant option. There are no violations in any part of the response."
+  },
+  {
+    "trace_id": "49_2",
+    "query": "I'm flexitarian leaning vegan",
+    "dietary_restriction": "vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests serving the curry with 'naan bread' in the ingredients list. Traditional and most commercially available naan bread is made with dairy products such as yogurt, milk, or ghee to achieve its characteristic soft texture. Dairy is an animal product and is not permitted in a vegan diet. According to Policy Rule 2, when the 'default version' of an ambiguous ingredient is non-compliant (as is the case with naan), it constitutes a FAIL unless a compliant version is specified (e.g., 'vegan naan bread'). The recipe does not provide this clarification, thus suggesting a non-compliant ingredient."
+  },
+  {
+    "trace_id": "57_2",
+    "query": "Vegetarian protein that isn't beans - I hate beans",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the vegetarian dietary restriction. The main protein source is tofu, which is plant-based. All other ingredients, including olive oil, onion, garlic, and spices, are also vegetarian. The \"Tips & Substitutions\" and \"Optional Add-ons\" sections only suggest other vegetarian ingredients (spice powders, spinach). The entire response avoids meat and fish, adhering completely to the vegetarian definition."
+  },
+  {
+    "trace_id": "26_5",
+    "query": "I'm on a sugar-free diet but I want to make candy",
+    "dietary_restriction": "sugar-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the sugar-free dietary restriction. It uses \"sugar-free chocolate chips\" and specifically instructs the user to choose \"peanut butter (check the label to ensure no added sugar).\" All other ingredients (coconut oil, salt) are naturally sugar-free. The substitutions (almond butter, sunflower seed butter) are appropriate alternatives, and the recipe has already established the precedent of checking labels for added sugar on this type of ingredient. The optional add-on (sea salt) is also compliant. No part of the recipe suggests using added sugars like honey, maple syrup, or regular sugar."
+  },
+  {
+    "trace_id": "24_2",
+    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic Ameri",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is evaluated against the 'vegetarian' restriction, which prohibits meat and fish. The core of the recipe uses \"plant-based burger patties,\" which are explicitly vegetarian. All other ingredients listed in the main recipe, including the dairy-free cheese, hamburger buns, vegan mayonnaise, ketchup, and vegetable toppings, are free of meat and fish. The \"Tips & Substitutions\" and \"Optional Add-ons\" sections also only suggest vegetarian-compliant ingredients (mustard, lettuce wraps, mushrooms). The entire response is fully compliant with a vegetarian diet."
+  },
+  {
+    "trace_id": "34_1",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests adding 'parmesan cheese' as an optional add-on. Traditional Parmesan cheese is made with animal rennet, which is an enzyme sourced from the stomach lining of a calf, making it non-vegetarian. While vegetarian versions of Parmesan exist, the unqualified term 'parmesan cheese' typically refers to the non-vegetarian version. Per Policy Rule 2, when an ambiguous ingredient's default version is non-compliant, it constitutes a FAIL. The recipe should have specified 'vegetarian Parmesan cheese' to be compliant."
+  },
+  {
+    "trace_id": "15_2",
+    "query": "I'm on keto but I'm craving something sweet. Help?",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the keto diet. All core ingredients \u2014 heavy whipping cream, unsweetened cocoa powder, and a specified keto-friendly sweetener (erythritol/monk fruit) \u2014 are high in fat and very low in carbohydrates. The preparation method is simple and introduces no non-compliant ingredients. The 'Tips & Substitutions' section correctly suggests alternative forms of keto sweeteners. The 'Optional Add-ons' are also keto-friendly, suggesting a small portion of a low-carb fruit (raspberries) and sugar-free chocolate shavings, both of which are acceptable on a keto diet."
+  },
+  {
+    "trace_id": "44_5",
+    "query": "I'm mostly vegetarian but I eat fish sometimes",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for salmon, a type of fish, which is the cornerstone of a pescatarian diet. The diet's only major restriction is avoiding non-seafood meat (like beef, chicken, or pork), none of which are included in the recipe. All ingredients listed in the main recipe, the \"Tips & Substitutions\" section (which suggests other fish like cod or tilapia), and the \"Optional Add-ons\" section (which suggests serving with rice or quinoa) are fully compliant with a pescatarian diet."
+  },
+  {
+    "trace_id": "15_5",
+    "query": "I'm on keto but I'm craving something sweet. Help?",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the keto dietary restriction. All ingredients in the main recipe are standard for keto baking: almond flour (low-carb), a specified keto-friendly sweetener (erythritol/monk fruit), unsweetened cocoa powder, egg, and butter. The preparation method is compliant. The Tips & Substitutions section suggests coconut oil as an alternative to butter, which is also a keto-friendly fat. The Optional Add-ons are also perfectly compliant: sugar-free chocolate chips, whipped cream (which in a keto context implies unsweetened whipped heavy cream), and raspberries (a low-sugar, keto-friendly fruit) are all appropriate for a ketogenic diet."
+  },
+  {
+    "trace_id": "35_4",
+    "query": "Paleo breakfast that I can eat in the car on my commute",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe violates the paleo diet restriction. The main ingredient list includes \"\u00bd lb ground pork sausage, cooked and crumbled.\" The Paleo diet excludes processed foods and all forms of added sugar. The vast majority of commercially available ground sausage (the \"default version\") contains added sugars (like dextrose, corn syrup), fillers (like breadcrumbs, which are grains), and non-paleo preservatives. The recipe fails to specify that a sugar-free, uncured, and grain-free sausage must be used.\n\nPer Policy Rule 2, if the most common, default version of an ingredient is non-compliant, it is a FAIL. A typical shopper buying standard \"ground pork sausage\" would almost certainly get a product that is not paleo-compliant.\n\nThe same violation occurs in the \"Tips & Substitutions\" section, which suggests using \"cooked, crumbled bacon\" as a swap. Default bacon is cured with sugar and nitrates, making it non-paleo. The recipe does not specify sugar-free or uncured bacon."
+  },
+  {
+    "trace_id": "35_5",
+    "query": "Paleo breakfast that I can eat in the car on my commute",
+    "dietary_restriction": "paleo",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe calls for 'ground breakfast sausage' without any further specification. Standard, widely available breakfast sausage typically contains non-Paleo ingredients such as added sugar (dextrose, corn syrup), grain-based fillers, and non-compliant preservatives. The Paleo diet excludes grains, added sugars, and processed foods. Per Policy Rule 2 (Ambiguous Ingredients), because the most common, default version of this ingredient is non-compliant, this constitutes a FAIL. The recipe should have specified 'Paleo-compliant breakfast sausage (no added sugar or grains)' to be compliant."
+  },
+  {
+    "trace_id": "20_4",
+    "query": "Low-carb pizza recipe - I miss pizza so much",
+    "dietary_restriction": "low-carb",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a low-carb diet. The core ingredient for the crust is a \"low-carb flour tortilla,\" which is a widely available and standard product for this diet. The recipe further specifies \"no-sugar-added pizza sauce,\" which correctly avoids the hidden carbs often found in tomato sauces. All other ingredients (olive oil, mozzarella, pepperoni, oregano) and all suggested substitutions and add-ons (cheddar, Italian blend cheese, sausage, olives, mushrooms, red pepper flakes) are inherently low in carbohydrates. The entire response adheres to the low-carb restriction without any violations."
+  },
+  {
+    "trace_id": "7_3",
+    "query": "I want to make a birthday cake but I'm diabetic. Something that still tastes good?",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is a FAIL because it uses a large quantity of all-purpose flour as the primary ingredient in the cake. All-purpose flour is a refined carbohydrate with a high glycemic index, meaning it is quickly digested and causes a significant spike in blood sugar. This directly violates the principles of a diabetic-friendly diet, which requires limited refined carbohydrates and low-glycemic ingredients to manage blood sugar levels. While the recipe correctly replaces sugar with a sugar substitute, the high amount of refined flour makes it unsuitable and unsafe for many people with diabetes."
+  },
+  {
+    "trace_id": "36_3",
+    "query": "Low-carb dinner that doesn't require any cooking skills",
+    "dietary_restriction": "low-carb",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a low-carb diet. The core ingredients \u2014 sausage, broccoli, bell pepper, and onion \u2014 are all low in carbohydrates. The cooking method is simple roasting. The \"Tips & Substitutions\" section suggests other low-carb vegetables like zucchini, cauliflower, and asparagus. The \"Optional Add-ons\" section suggests Parmesan cheese, which is a very low-carb ingredient and appropriate for this diet. The entire response adheres to the principles of a low-carb diet."
+  },
+  {
+    "trace_id": "1_5",
+    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The 'Tips & Substitutions' section suggests using 'your favorite store-bought granola' as a substitute for the toasted oats and nuts. Generic 'granola' is an ambiguous ingredient where the default, common version is often non-compliant with a vegan diet because it frequently contains honey. According to Policy Rule 2, suggesting an ambiguous ingredient that is typically non-compliant without specifying a compliant version (e.g., 'vegan granola' or 'check the label for honey') is a FAIL. This is also a violation of Policy Rule 1, as it suggests an optional non-compliant ingredient."
+  },
+  {
+    "trace_id": "27_5",
+    "query": "Raw vegan soup that's actually warm somehow?",
+    "dietary_restriction": "raw vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe contains multiple violations of the raw vegan dietary restriction. \n\n1.  **Cooking Method Violation (Step 4):** The instructions state to blend until \"you will see steam escaping from the vented lid.\" Visible steam indicates a temperature well above the raw vegan threshold of 118\u00b0F (48\u00b0C). This is a direct cooking method violation under Policy Rule 4.\n\n2.  **Non-compliant Tip (Tips & Substitutions):** The recipe suggests that if you don't have a high-speed blender, you can \"gently heat it in a pot on the stove over low heat.\" This explicitly instructs the user to cook the soup, which is a clear violation of the raw vegan diet. This violates Policy Rule 5.\n\n3.  **Non-compliant Ingredient Substitution (Tips & Substitutions):** The recipe suggests using \"one (14.5 oz) can of whole peeled tomatoes\" as a substitute for fresh tomatoes. Canned tomatoes are heat-processed (cooked) during the canning process to make them shelf-stable, and are therefore not raw. Suggesting this non-compliant ingredient is a violation under Policy Rule 5."
+  },
+  {
+    "trace_id": "25_4",
+    "query": "Low-carb pasta substitute that my Italian grandmother won't disown me for",
+    "dietary_restriction": "low-carb",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The main recipe and tips are compliant with a low-carb diet, using zucchini as a pasta substitute and other low-carb ingredients like olive oil and Parmesan. However, the \"Optional Add-ons\" section suggests adding \"canned chickpeas.\" Chickpeas are legumes and are high in carbohydrates, with a half-cup containing approximately 20g of net carbs. While a small amount might fit into a daily 50g carb limit, they are not considered a low-carb food and are typically avoided on such diets. Suggesting an ingredient from a food group that is generally excluded from a low-carb diet is a violation. Per Policy Rule 1, suggesting a non-compliant ingredient, even as an optional add-on, constitutes a FAIL."
+  },
+  {
+    "trace_id": "25_5",
+    "query": "Low-carb pasta substitute that my Italian grandmother won't disown me for",
+    "dietary_restriction": "low-carb",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The main recipe is low-carb compliant, using zucchini noodles, pesto, and Parmesan cheese. However, the \"Optional Add-ons\" section suggests adding \"a can of drained chickpeas.\" Chickpeas are a legume and are high in carbohydrates, making them unsuitable for a low-carb diet. A single can of chickpeas contains a significant amount of carbs (often over 40g net carbs), which would completely undermine the low-carb nature of the dish. Per Policy Rule 1, suggesting a non-compliant ingredient in an optional section constitutes a FAIL."
+  },
+  {
+    "trace_id": "60_5",
+    "query": "Raw vegan meal that's actually filling",
+    "dietary_restriction": "raw vegan ",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails because the \"Tips & Substitutions\" section suggests using \"store-bought hummus\" as a substitute for avocado. Standard, commercially available hummus is made from cooked chickpeas and tahini (which is typically made from roasted sesame seeds). Neither of these ingredients are raw, as they have been heated well above the 118\u00b0F (48\u00b0C) threshold. The recipe does not specify a \"raw hummus\" variant, and the default version a shopper would find is not raw. According to Policy Rule 5, suggesting a non-compliant substitution results in a FAIL."
+  },
+  {
+    "trace_id": "31_3",
+    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. ",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the vegan dietary restriction throughout the entire response. All core ingredients are plant-based. The recipe correctly uses plant-based milk as a wash instead of egg. The response also proactively addresses potentially non-vegan ingredients: the \"Tips & Substitutions\" section explicitly advises the user to check the label on the frozen puff pastry to ensure it is made with oil and not butter, which is a common animal-derived ingredient. All suggested substitutions (pecans, sunflower seeds) and optional add-ons (nutritional yeast) are also vegan-compliant."
+  },
+  {
+    "trace_id": "50_3",
+    "query": "Something that feels indulgent but isn't terrible for me",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe calls for \"12 ounces penne pasta\" as the primary ingredient. Standard penne pasta is made from refined white flour, which is a high-carbohydrate, high-glycemic-index food. A serving of this size (3 ounces dry pasta per person) contains a very large amount of refined carbohydrates, which can cause a significant spike in blood sugar. This directly violates the core principles of a diabetic-friendly diet, which requires controlled carbohydrates and limited refined carbs. While the \"Tips & Substitutions\" section suggests whole wheat pasta as an option, the primary recipe itself is built around a non-compliant ingredient."
+  },
+  {
+    "trace_id": "59_3",
+    "query": "Nut-free lunch that's safe for my kid's school",
+    "dietary_restriction": "nut-free",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe suggests \"plain hummus\" as a nut-free substitute for cream cheese in the \"Tips & Substitutions\" section. Standard hummus is made with tahini, which is a paste made from sesame seeds. While sesame is a common allergen and is often restricted in nut-free school environments, it is a seed, not a tree nut or a peanut. According to the provided dietary restriction definition, \"Nut-free: No tree nuts or peanuts.\" Since sesame is not a nut, hummus is technically compliant with the given definition. All other ingredients and suggestions (tortilla, turkey, cheese, carrots, ham, spinach) are also nut-free. The recipe as a whole adheres to the specific definition provided."
+  },
+  {
+    "trace_id": "21_1",
+    "query": "Raw vegan dessert for a potluck that won't weird people out",
+    "dietary_restriction": "raw vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails to adhere to the raw vegan dietary restriction for multiple reasons.\n\n1.  **Non-Raw Ingredients:** The recipe calls for \"unsweetened cocoa powder\" and \"vanilla extract.\" Standard cocoa powder is made from cacao beans that have been roasted at high temperatures, which is not raw. Similarly, standard vanilla extract is made using alcohol that is produced via high-heat distillation. A compliant raw vegan recipe would specify \"raw cacao powder\" and a raw vanilla alternative like vanilla bean powder. This violates Policy Rule 2, as the default versions of these ingredients are not raw.\n\n2.  **Non-Raw Preparation Method:** The \"Tips & Substitutions\" section suggests that if dates are dry, one should \"soak them in a bowl of hot water for 10 minutes.\" Hot water from a tap or kettle is almost always above the 118\u00b0F (48\u00b0C) threshold for a raw diet, which would cook the dates. This suggestion is a cooking method violation, failing the recipe under Policy Rule 4 and Policy Rule 5.\n\n3.  **Optional Non-Raw Ingredient:** The \"Optional Add-ons\" section suggests adding \"mini chocolate chips.\" Standard chocolate chips, even if they are dairy-free, are not raw as they are made from roasted cacao. Suggesting an optional non-compliant ingredient is a violation per Policy Rule 1."
+  },
+  {
+    "trace_id": "43_4",
+    "query": "Comfort food that won't make me feel guilty",
+    "dietary_restriction": "vegetarian",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for a vegetarian diet, which prohibits meat and fish. The main ingredient list calls for \"2 cups vegetable or chicken broth\". Chicken broth is made from meat and is not vegetarian. Suggesting a non-compliant ingredient in the main recipe is a direct violation of the dietary restriction. Additionally, the \"Optional Add-ons\" section suggests serving with \"Parmesan cheese\". Traditional Parmesan cheese uses animal rennet, making it non-vegetarian. Per Policy Rule 2, if the default version of an ambiguous ingredient is non-compliant, it's a FAIL. Both of these are violations."
+  },
+  {
+    "trace_id": "9_3",
+    "query": "Raw vegan salad that doesn't taste like grass",
+    "dietary_restriction": "raw vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe violates the raw vegan dietary restriction in multiple ways. First, a core ingredient in the dressing is \"1 tablespoon maple syrup.\" Maple syrup is produced by boiling tree sap at high temperatures, which is a cooking process that makes it non-compliant with a raw food diet. Second, the dressing calls for \"1/2 teaspoon garlic powder,\" which is made from garlic dehydrated with heat and is not a raw ingredient. Third, the \"Tips & Substitutions\" section suggests several non-compliant swaps. It suggests \"peanut butter or almond butter\" for tahini, but the default versions of these are made from roasted nuts. It also suggests \"agave nectar\" or \"sugar dissolved in the water\" as substitutes for maple syrup; both agave and refined sugar are heat-processed and not raw. Per Policy Rules 2 and 5, using ingredients whose default version is not compliant and suggesting non-compliant substitutions both constitute a FAIL."
+  },
+  {
+    "trace_id": "55_4",
+    "query": "I'm pescatarian but shellfish makes me sick",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a pescatarian diet. The main protein is salmon, which is a fish and therefore permitted. All other ingredients are plant-based. The \"Tips & Substitutions\" section suggests other types of fish (cod, tilapia) which are also compliant. The \"Optional Add-ons\" section suggests fresh herbs, which are also compliant. The recipe does not contain any non-fish meat products (like beef, chicken, or pork) anywhere in the response."
+  },
+  {
+    "trace_id": "44_4",
+    "query": "I'm mostly vegetarian but I eat fish sometimes",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for salmon, a type of fish, which is permitted in a pescatarian diet. All other ingredients in the main recipe, including broccoli, olive oil, garlic, dill, salt, pepper, and lemon, are plant-based and therefore compliant. The \"Tips & Substitutions\" section suggests other vegetables (asparagus, green beans) and seasonings, which are also compliant. The \"Optional Add-ons\" section suggests serving the meal over quinoa or brown rice, both of which are plant-based grains and fully compliant with a pescatarian diet. The entire response contains no meat products (like chicken, beef, or pork) and adheres strictly to the dietary restriction."
+  },
+  {
+    "trace_id": "10_5",
+    "query": "I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a pescatarian diet. The core protein is shrimp, which is a type of seafood and is permitted. All other ingredients listed in the main recipe, the 'Tips & Substitutions' section, and the 'Optional Add-ons' section are either seafood or plant-based (pasta, olive oil, garlic, tomatoes, lemon, parsley, spinach). The recipe contains no prohibited meat like chicken, beef, or pork."
+  },
+  {
+    "trace_id": "6_3",
+    "query": "Paleo lunch that doesn't involve any nuts. but i can eat almonds - I'm allergic",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the Paleo diet, which excludes grains, legumes, dairy, and refined sugar. All ingredients listed\u2014chicken breast, broccoli, bell pepper, olive/avocado oil, lemon, and spices\u2014are whole foods compliant with Paleo principles. The cooking method (roasting) is also compliant. The \"Tips & Substitutions\" (chicken thighs, zucchini, squash, thyme) and \"Optional Add-ons\" (parsley) are also all fully Paleo-compliant. The entire response is free of any violating ingredients."
+  },
+  {
+    "trace_id": "16_2",
+    "query": "Vegetarian curry but I don't eat onions or garlic for religious reasons",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The dietary restriction is \"vegetarian.\" A vegetarian diet excludes meat and fish but allows for dairy, eggs, and plant-based foods. All ingredients in the main recipe (chickpeas, spinach, coconut milk, tomatoes, spices) are plant-based and therefore vegetarian. The serving suggestion of \"naan\" is also vegetarian-compliant; while traditional naan often contains dairy (like yogurt), dairy is permitted in a vegetarian diet. The \"Tips & Substitutions\" section suggests using \"heavy cream\" as an alternative to coconut milk; heavy cream is a dairy product and is also compliant with a vegetarian diet. The optional add-on of potatoes is also vegetarian. There are no violations of the vegetarian restriction anywhere in the response."
+  },
+  {
+    "trace_id": "13_5",
+    "query": "Vegan chocolate cake for my birthday but I'm also trying to avoid refined sugar",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegan diet. All ingredients in both the cake and the frosting are plant-based. The recipe avoids all animal products: there is no meat, no dairy (uses oil, water, and avocado instead of butter/milk/cream), no eggs (uses baking soda and vinegar for leavening), and no honey (uses maple syrup for sweetener). The ingredients listed in the \"Tips & Substitutions\" (coconut oil, light olive oil, white vinegar) and \"Optional Add-ons\" (raspberries, strawberries) sections are also all vegan. There are no violations anywhere in the response."
+  },
+  {
+    "trace_id": "55_1",
+    "query": "I'm pescatarian but shellfish makes me sick",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is for salmon, which is a fish and therefore compliant with a pescatarian diet. All other ingredients in the main recipe, such as broccoli, lemon, olive oil, and seasonings, are also compliant. The \"Tips & Substitutions\" section suggests other types of fish (Arctic char, trout) and vegetables as alternatives, which are all compliant. The \"Optional Add-ons\" section suggests plant-based side dishes (rice, quinoa). The entire response strictly adheres to the pescatarian diet by using fish and avoiding all other types of meat."
+  },
+  {
+    "trace_id": "22_4",
+    "query": "I'm diabetic but I want to make a fruit cake for Christmas. My grandmother's recipe has tons of sugar and dried fruit but it's tradition and I can't j",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails to adhere to the 'diabetic-friendly' restriction for multiple reasons. \n\n1.  **High-Carb/High-Sugar Ingredients:** The recipe uses 1 cup of all-purpose flour, a refined carbohydrate with a high glycemic index. More significantly, it calls for a combined \u00bd cup of dried apricots and dried cranberries. Dried fruit is a source of highly concentrated sugar and is generally not recommended in significant quantities for diabetic diets.\n\n2.  **Non-Compliant Substitution Suggestion:** The 'Tips & Substitutions' section contains a critical violation. It suggests, \"If you don't have almond flour, you can use 1 \u00bd cups of all-purpose flour instead.\" This substitution would dramatically increase the amount of refined carbohydrates and raise the glycemic load of the cake, making it even less suitable for a diabetic person. Per Policy Rule 5, suggesting a non-compliant substitution results in a FAIL."
+  },
+  {
+    "trace_id": "31_4",
+    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. ",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegan diet. All ingredients are plant-based. The recipe explicitly calls for vegan-compliant items like \"plant-based milk\" and \"vegan butter or olive oil,\" avoiding dairy. The filling is made from lentils and vegetables, with no meat products. The only potentially ambiguous ingredient is \"soy sauce,\" but the default, most common version of soy sauce is made from soybeans, wheat, water, and salt, and is vegan. Per Policy Rule 2, this is acceptable. All tips, substitutions, and optional add-ons are also fully vegan."
+  },
+  {
+    "trace_id": "18_2",
+    "query": "Low-sodium soup recipe - my doctor says I need to cut back",
+    "dietary_restriction": "low-sodium",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the low-sodium dietary restriction. It intentionally omits salt from the ingredient list. For ingredients that are typically high in sodium (broth, canned tomatoes), the recipe explicitly specifies using \"low-sodium\" or \"no salt added\" versions, even telling the user what to look for on the label. The \"Tips & Substitutions\" section reinforces this by suggesting lemon juice as a flavor enhancer instead of salt. All other ingredients, substitutions, and optional add-ons are naturally low in sodium. The entire response is consistently and correctly tailored to the user's restriction."
+  },
+  {
+    "trace_id": "20_5",
+    "query": "Low-carb pizza recipe - I miss pizza so much",
+    "dietary_restriction": "low-carb",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the low-carb dietary restriction. It successfully modifies a traditionally high-carb food by explicitly calling for \"low-carb tortilla\" for the crust and \"low-carb pizza sauce\" with a note to check for no added sugar. All other main ingredients (mozzarella, pepperoni) are inherently low in carbohydrates. The \"Tips & Substitutions\" and \"Optional Add-ons\" sections also suggest only low-carb ingredients like provolone cheese, sausage crumbles, olives, mushrooms, and basil. The recipe consistently adheres to the low-carb principles throughout the entire response."
+  },
+  {
+    "trace_id": "53_5",
+    "query": "Kosher dessert for Passover",
+    "dietary_restriction": "kosher",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for a Passover dessert, which has strict dietary laws beyond standard kosher rules. Several ingredients listed are not kosher for Passover in their standard, off-the-shelf forms.\n\n1.  **Vanilla Extract:** The recipe calls for \"1 teaspoon vanilla extract.\" Standard vanilla extract is made with alcohol that is often derived from grain (which is chametz and forbidden on Passover) or corn (which is kitniyot and also forbidden by many). A recipe compliant for Passover must specify \"non-alcohol vanilla\" or \"Kosher for Passover certified vanilla extract.\" Per Policy Rule 2, the default version of this ingredient is non-compliant.\n\n2.  **Powdered Sugar:** The \"Optional Add-ons\" section suggests a dusting of \"powdered sugar.\" Standard powdered sugar contains cornstarch as an anti-caking agent. Corn is kitniyot and not permissible for Passover for Ashkenazi Jews. A compliant recipe would need to specify \"Kosher for Passover powdered sugar\" (which uses potato starch instead). Per Policy Rule 1, suggesting an optional non-compliant ingredient is a FAIL.\n\n3.  **Chocolate & Cocoa Powder:** The recipe calls for generic \"semi-sweet chocolate chips\" and \"cocoa powder.\" Processed foods like these require specific \"Kosher for Passover\" certification to ensure they were not made with any chametz or on equipment shared with chametz. The default versions in a regular grocery store are not certified for Passover. This is another violation of Policy Rule 2."
+  },
+  {
+    "trace_id": "7_5",
+    "query": "I want to make a birthday cake but I'm diabetic. Something that still tastes good?",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails because it suggests a non-compliant ingredient in the main ingredient list. In the cake ingredients, the recipe calls for \"\u00bc cup unsweetened almond milk (or regular milk)\". While unsweetened almond milk is compliant with a diabetic-friendly diet due to its very low carbohydrate content, \"regular milk\" contains lactose, which is a sugar. This adds unnecessary carbohydrates and sugar to a recipe specifically designed to be low on the glycemic index. For a recipe to be truly diabetic-friendly, it should not suggest ingredients that work against the core principle of minimizing blood sugar impact, especially when a superior, zero-sugar alternative is already listed. Per Policy Rule 1, suggesting a non-compliant ingredient, even as an alternative, constitutes a failure."
+  },
+  {
+    "trace_id": "59_2",
+    "query": "Nut-free lunch that's safe for my kid's school",
+    "dietary_restriction": "nut-free",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe suggests substituting cream cheese with \"hummus (check label to ensure nut-free)\". Traditional hummus is made with tahini, which is a paste made from sesame seeds. Sesame is a seed, not a nut, so it does not violate the nut-free restriction. The bot correctly identifies that some commercial hummus products can have cross-contamination issues or non-standard ingredients, and appropriately advises the user to check the label. This is a responsible and compliant suggestion. All other ingredients and suggestions (tortilla, cream cheese, vegetables, deli meats, Greek yogurt) are also inherently nut-free."
+  },
+  {
+    "trace_id": "34_4",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegetarian diet. The core ingredients are all plant-based (lentils, beans, tomatoes, spices). The \"Optional Add-ons\" section suggests topping the chili with Greek yogurt and cheddar cheese. Both of these are dairy products, which are permitted in a vegetarian diet. No meat or fish is mentioned anywhere in the recipe, tips, or add-ons. Therefore, the entire response adheres to the restriction."
+  },
+  {
+    "trace_id": "14_1",
+    "query": "Gluten-free pizza dough that actually tastes good and isn't cardboard",
+    "dietary_restriction": "gluten-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe correctly identifies and uses ingredients that are compliant with a gluten-free diet. The primary ingredient is a \"gluten-free all-purpose flour blend,\" which is explicitly compliant. All other ingredients listed (yeast, sugar, salt, water, olive oil) are naturally gluten-free. The instructions and preparation methods do not introduce any gluten. Furthermore, the \"Tips & Substitutions\" section suggests only gluten-free alternatives (honey, maple syrup). The \"Optional Add-ons\" section also suggests a gluten-free addition (dried oregano or an Italian herb blend). The entire response is fully compliant with the dietary restriction."
+  },
+  {
+    "trace_id": "11_4",
+    "query": "Whole30 compliant dinner that my non-Whole30 husband will actually eat",
+    "dietary_restriction": "whole30",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the Whole30 dietary restriction. All ingredients listed (vegetables, olive oil, spices) are compliant. The recipe correctly identifies that standard sausage can be non-compliant and provides a specific, helpful note instructing the user to check the label for Whole30-compliant ingredients (no added sugar, nitrates, or grains). The suggested substitutions in the 'Tips & Substitutions' section (Brussels sprouts, cauliflower, sweet potatoes, chicken breast) are all compliant. The 'Optional Add-ons' suggestion (lemon juice) is also compliant. The entire response adheres to the rules of the Whole30 program."
+  },
+  {
+    "trace_id": "50_1",
+    "query": "Something that feels indulgent but isn't terrible for me",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The main recipe, featuring shrimp and asparagus, is perfectly compliant with a diabetic-friendly diet as it is low in carbohydrates and high in lean protein and fiber. However, the \"Tips & Substitutions\" section contains a major violation. It suggests making the dish a meal by serving it over \"rice, or with a piece of crusty bread.\" Standard white rice and crusty bread are made from refined carbohydrates, have a high glycemic index, and can cause significant blood sugar spikes, making them unsuitable for a diabetic-friendly diet. Per Policy Rule 1, suggesting optional non-compliant ingredients, even as a serving suggestion, constitutes a FAIL."
+  },
+  {
+    "trace_id": "36_5",
+    "query": "Low-carb dinner that doesn't require any cooking skills",
+    "dietary_restriction": "low-carb",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a low-carb diet. The primary ingredients, salmon and asparagus, are very low in carbohydrates. The seasonings (olive oil, salt, pepper, garlic powder, lemon) are also low-carb. The 'Tips & Substitutions' section suggests other low-carb vegetables (broccoli, green beans) and seasonings (oregano), which are appropriate. The 'Optional Add-ons' section suggests Parmesan cheese, which is a very low-carb food and a suitable addition to a low-carb meal. There are no violations in any part of the response."
+  },
+  {
+    "trace_id": "40_4",
+    "query": "I'm trying to eat clean but I want pizza",
+    "dietary_restriction": "whole30",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe violates the Whole30 dietary restriction in multiple ways. The Whole30 program prohibits grains, dairy, and legumes. \n\n1.  **Whole Wheat Pita Bread:** The primary ingredient for the crust is a whole wheat pita. Wheat is a grain, which is explicitly not allowed on Whole30.\n2.  **Shredded Part-Skim Mozzarella Cheese:** The recipe calls for mozzarella cheese as a topping. All dairy, including cheese, is prohibited on Whole30.\n3.  **Chickpeas:** The \"Optional Add-ons\" section suggests adding chickpeas for a protein boost. Chickpeas are legumes, which are also not permitted on Whole30. Per Policy Rule 1, an optional non-compliant ingredient is a FAIL.\n4.  **Marinara/Pizza Sauce:** Per Policy Rule 2, the default version of store-bought marinara or pizza sauce almost always contains added sugar, which is not allowed on Whole30. The recipe does not specify a compliant, sugar-free version."
+  },
+  {
+    "trace_id": "55_3",
+    "query": "I'm pescatarian but shellfish makes me sick",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provided is for salmon, a type of fish, which is permitted in a pescatarian diet. A pescatarian diet excludes all meat except for fish and seafood. All other ingredients in the main recipe are plant-based (asparagus, olive oil, garlic, dill, lemon) or seasonings, which are compliant. The 'Tips & Substitutions' section suggests other types of fish (cod, tilapia) and vegetables (broccoli, green beans), all of which are pescatarian-compliant. The 'Optional Add-ons' suggest couscous or quinoa, which are plant-based grains/seeds and are also compliant. The entire response, including all suggestions, strictly adheres to the pescatarian dietary restriction by not including any non-seafood meat."
+  },
+  {
+    "trace_id": "15_3",
+    "query": "I'm on keto but I'm craving something sweet. Help?",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a keto diet. The main ingredients consist of almond flour, a keto-friendly sweetener (erythritol/monk fruit), unsweetened cocoa powder, egg, and butter, all of which are very low in carbohydrates and appropriate for a ketogenic diet. The \"Tips & Substitutions\" section suggests using coconut oil, another keto-friendly fat. The \"Optional Add-ons\" section suggests using keto-friendly dark chocolate (85% or higher), which is also a compliant ingredient. The entire response, including all suggestions, adheres to the principles of a very low-carb, high-fat diet."
+  },
+  {
+    "trace_id": "53_2",
+    "query": "Kosher dessert for Passover",
+    "dietary_restriction": "kosher",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for a Passover dessert, which has stricter rules than standard kosher laws, primarily the avoidance of 'chametz' (leavened grains). The recipe correctly specifies \"kosher for Passover chocolate chips\" in the main ingredient list and \"kosher for Passover white chocolate\" in the optional add-ons, showing awareness of this requirement. However, in the \"Tips & Substitutions\" section, it suggests, \"You can use milk chocolate...\" without repeating the crucial \"kosher for Passover\" qualifier. Standard milk chocolate is not kosher for Passover, as it may contain chametz additives or be processed on non-Passover-certified equipment. Per Policy Rule 2 (Ambiguous Ingredients), the default version of \"milk chocolate\" is not compliant with Passover dietary laws. Suggesting this without qualification is a violation. Per Policy Rule 5, suggesting a non-compliant substitution is a FAIL."
+  },
+  {
+    "trace_id": "26_4",
+    "query": "I'm on a sugar-free diet but I want to make candy",
+    "dietary_restriction": "sugar-free",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe itself uses compliant ingredients like \"sugar-free chocolate chips,\" \"unsweetened, creamy peanut butter,\" and \"sugar-free sweetener.\" However, the \"Tips & Substitutions\" section contains a violation. It suggests, \"You can swap the peanut butter for an equal amount of... sunflower seed butter.\" The recipe does not specify that the sunflower seed butter must be unsweetened. According to the \"default version\" test (Policy Rule 2), the most common versions of sunflower seed butter sold in stores contain added sugar. A user following this suggestion could easily purchase a non-compliant product. To be compliant, the recipe should have specified \"unsweetened sunflower seed butter.\" Because the recipe suggests a potentially non-compliant ingredient, even as an optional substitution, it is a FAIL."
+  },
+  {
+    "trace_id": "19_5",
+    "query": "Vegan protein smoothie that doesn't taste chalky",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegan diet. All ingredients are plant-based. It specifies \"vegan protein powder\" to avoid whey or other animal-derived proteins. It uses almond milk and suggests other vegan milk alternatives like oat and soy milk. All other ingredients, including the fruits, nut/seed butters, and optional spinach, are plant-based. There are no animal products (meat, dairy, eggs, honey, etc.) mentioned anywhere in the response."
+  },
+  {
+    "trace_id": "15_1",
+    "query": "I'm on keto but I'm craving something sweet. Help?",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a keto diet. It uses almond flour instead of high-carb wheat flour, and a specified keto-friendly sweetener (erythritol) instead of sugar. All other ingredients (butter, cocoa powder, egg) are low-carb and high-fat, which is appropriate for keto. The 'Tips & Substitutions' section suggests coconut oil, another keto-friendly fat. The 'Optional Add-ons' suggest whipped heavy cream and a small amount of raspberries, both of which are common and acceptable on a ketogenic diet due to their low carbohydrate content. There are no violations in the entire response."
+  },
+  {
+    "trace_id": "10_2",
+    "query": "I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?",
+    "dietary_restriction": "pescatarian",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests using '1/2 cup chicken or vegetable broth' in the main ingredients list. Chicken broth is made from meat (chicken), which is prohibited in a pescatarian diet. Per Policy Rule 1, suggesting a non-compliant ingredient, even as an option alongside a compliant one, is a FAIL. The recipe should have exclusively recommended a compliant option like vegetable broth, seafood stock, or just the pasta water mentioned in the tips."
+  },
+  {
+    "trace_id": "47_2",
+    "query": "Dairy-free but cheese is okay sometimes",
+    "dietary_restriction": "dairy-free",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The dietary restriction is \"dairy-free.\" The recipe's ingredient list explicitly includes \"\u00bd cup grated Parmesan cheese, for serving.\" Parmesan cheese is a dairy product made from milk, which directly violates the dairy-free restriction. Additionally, Step 7 of the instructions directs the user to \"top generously with grated Parmesan cheese.\" The \"Tips & Substitutions\" section also suggests \"Pecorino Romano\" as a substitute for Parmesan. Pecorino Romano is also a cheese made from sheep's milk and is a dairy product. Per Policy Rule 1, suggesting a non-compliant ingredient, even for serving, is a FAIL. Per Policy Rule 5, suggesting a non-compliant substitution is also a FAIL. Although the user's query mentioned cheese might be okay, the evaluation must be against the strict \"dairy-free\" restriction (Policy Rule 3)."
+  },
+  {
+    "trace_id": "31_1",
+    "query": "I need a vegan recipe for Thanksgiving dinner that will satisfy my very traditional meat-and-potatoes family who think vegetables are what food eats. ",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe lists \"1/2 cup plain breadcrumbs\" as a main ingredient. According to Policy Rule 2, we must apply the \"default version\" test for ambiguous ingredients. The most common and widely available brand of breadcrumbs in many supermarkets (e.g., Progresso) contains milk-derived ingredients like whey, which are not vegan. Because a typical shopper grabbing the default or most popular brand would likely get a non-compliant product, the recipe fails. It should have specified \"vegan breadcrumbs\" or suggested making them from scratch to ensure compliance."
+  },
+  {
+    "trace_id": "34_2",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegetarian diet. All ingredients in the main recipe, such as lentils, chickpeas, coconut milk, and vegetables, are plant-based. The 'Tips & Substitutions' section suggests other compliant plant-based ingredients like different types of lentils and kale. The 'Optional Add-ons' section suggests 'plain Greek yogurt'. Dairy products like yogurt are permitted in a vegetarian diet. Therefore, the entire response adheres to the restriction."
+  },
+  {
+    "trace_id": "27_1",
+    "query": "Raw vegan soup that's actually warm somehow?",
+    "dietary_restriction": "raw vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe contains multiple violations of the raw vegan dietary restriction. First, in the main steps, the instructions say to blend until \"you will see steam rising from the blender\" and to serve the \"hot soup.\" Visible steam indicates a temperature well above the 118\u00b0F (48\u00b0C) threshold for a raw food diet. This is a direct violation of the cooking method, as per Policy Rule 4. \n\nAdditionally, the \"Tips & Substitutions\" section contains two more violations. It suggests an alternative preparation method: \"pour it into a small pot and heat gently on the stove,\" which is cooking and therefore not raw. It also suggests soaking sunflower seeds in \"hot water,\" which would heat them above the raw temperature limit. Suggesting non-compliant methods or ingredients in the tips section is a violation under Policy Rule 5."
+  },
+  {
+    "trace_id": "3_4",
+    "query": "Keto breakfast that I can meal prep for the week",
+    "dietary_restriction": "keto",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the ketogenic dietary restriction. All core ingredients (eggs, bacon, cheddar cheese, spinach, heavy cream) are very low in carbohydrates and high in fat and protein, making them ideal for a keto diet. The instructions are standard and do not introduce any non-compliant elements. The \"Tips & Substitutions\" section suggests other keto-friendly proteins (sausage, ham), cheeses (Swiss, mozzarella, Mexican cheese blend), and vegetables (bell peppers, mushrooms). The \"Optional Add-ons\" (hot sauce, red pepper flakes) are also compliant, as the default versions of these ingredients are typically free of sugar and have negligible carbs. The entire response, including all optional suggestions, adheres strictly to the principles of a ketogenic diet."
+  },
+  {
+    "trace_id": "47_4",
+    "query": "Dairy-free but cheese is okay sometimes",
+    "dietary_restriction": "dairy-free",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is for a \"dairy-free\" diet. The ingredient list includes \"\u00bc cup grated Parmesan cheese (optional)\" and step 7 instructs to \"Sprinkle with optional Parmesan cheese during the last 2 minutes of cooking, if you like.\" Parmesan cheese is a dairy product made from milk and is therefore not compliant with a dairy-free diet. Per Policy Rule 1, suggesting a non-compliant ingredient, even if it is labeled as \"optional,\" constitutes a FAIL. The recipe should not suggest any dairy products."
+  },
+  {
+    "trace_id": "8_2",
+    "query": "My kid needs a nut-free cookie recipe for school but she's super picky and only likes chocolate",
+    "dietary_restriction": "nut-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe response correctly adheres to the nut-free dietary restriction. All ingredients listed in the main recipe (butter, sugar, egg, vanilla, flour, cocoa powder, baking soda, salt) are inherently nut-free. Crucially, the recipe specifies \"nut-free chocolate chips\" and includes a \"Safety First\" tip advising the user to check the labels on both the chocolate chips and cocoa powder to ensure they were produced in a nut-free facility. This demonstrates a strong understanding of cross-contamination risks, which is vital for serious allergies. All substitutions and optional add-ons are also nut-free. The entire response is compliant."
+  },
+  {
+    "trace_id": "38_2",
+    "query": "I don't like vegetables but I want to eat healthy",
+    "dietary_restriction": "vegetarian",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe response fails on two counts. First, in the \"Tips & Substitutions\" section, it suggests using \"chicken broth\" as an alternative to water. Chicken broth is made from meat and is not vegetarian, violating the dietary restriction. This is a FAIL according to Policy Rule 5. Second, the \"Optional Add-ons\" section explicitly suggests adding \"ground beef or turkey\" to the sauce. Both beef and turkey are meat, which are strictly forbidden in a vegetarian diet. Per Policy Rule 1, suggesting optional non-compliant ingredients is a FAIL."
+  },
+  {
+    "trace_id": "29_5",
+    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegan diet. All ingredients in the main recipe are plant-based (olive oil, onion, garlic, spices, lentils, vegetable broth, tomatoes). The recipe avoids all animal products such as meat, dairy, eggs, or honey. The 'Tips & Substitutions' section suggests using vegetable bouillon, which is typically vegan, and curry powder, which is a vegan spice blend. The 'Optional Add-ons' section suggests adding coconut milk, which is a plant-based, vegan-friendly ingredient. No part of the response suggests or includes a non-vegan ingredient or method."
+  },
+  {
+    "trace_id": "16_4",
+    "query": "Vegetarian curry but I don't eat onions or garlic for religious reasons",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegetarian diet. All ingredients in the main recipe, including the oil, spices, vegetables (potato, tomatoes), legumes (chickpeas), and coconut milk, are plant-based and therefore vegetarian. The serving suggestions of rice and naan are also vegetarian. The \"Tips & Substitutions\" section suggests swapping potato for cauliflower or sweet potato (both vegetarian) or swapping coconut milk for yogurt or heavy cream (both dairy, which is permitted in a vegetarian diet). The \"Optional Add-ons\" section suggests adding spinach, which is also vegetarian. There are no ingredients that violate the vegetarian restriction (no meat or fish) anywhere in the response."
+  },
+  {
+    "trace_id": "29_3",
+    "query": "I'm vegan and gluten-free and also hate vegetables. What can I eat?",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is evaluated against the 'vegan' dietary restriction. The ingredients list includes \"4 slices of gluten-free bread\" but fails to specify that the bread must also be vegan. Many common brands of gluten-free bread use eggs as a binder to improve texture in the absence of gluten. Per Policy Rule 2, this is an ambiguous ingredient where the common or \"default version\" is often non-compliant. The recipe should have specified \"vegan, gluten-free bread\" to ensure it adheres to the vegan restriction. A user grabbing a typical loaf of gluten-free bread off the shelf could easily purchase a non-vegan product."
+  },
+  {
+    "trace_id": "47_3",
+    "query": "Dairy-free but cheese is okay sometimes",
+    "dietary_restriction": "dairy-free",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The user requested a dairy-free recipe. The main recipe and tips are compliant, using ingredients like sausage, vegetables, and olive oil, all of which are typically dairy-free. However, the \"Optional Add-ons\" section explicitly suggests adding \"\u00bc cup of grated Parmesan cheese.\" Parmesan cheese is a dairy product derived from milk. According to Policy Rule 1, suggesting a non-compliant ingredient, even as an optional add-on, constitutes a failure for the entire response. The bot should not have included a dairy product in a recipe meant to be dairy-free, regardless of the user's casual comment about sometimes eating cheese (per Policy Rule 3)."
+  },
+  {
+    "trace_id": "23_1",
+    "query": "Vegan cheese recipe but it should taste good. i can have cashews but no other nuts. i don't like nutritional yeast",
+    "dietary_restriction": "vegan",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provided is fully compliant with the vegan dietary restriction. All ingredients listed\u2014cashews, water, lemon juice, miso paste, garlic powder, onion powder, and salt\u2014are plant-based and do not involve any animal products. The instructions are for preparation and do not introduce non-vegan elements. The \"Tips & Substitutions\" section suggests adding turmeric, which is a vegan spice. The \"Optional Add-ons\" section suggests fresh herbs (chives, dill, parsley), all of which are vegan. The entire response, including all sections, adheres to the vegan diet."
+  },
+  {
+    "trace_id": "17_5",
+    "query": "I want paleo bread but every recipe I've tried is terrible",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the Paleo diet, which excludes grains, legumes, dairy, and refined sugar. The bread is made with almond flour and arrowroot starch (grain-free), uses coconut oil (dairy-free), and contains no added sugars. All ingredients listed, including those in the Tips & Substitutions section (light olive oil, avocado oil) and the Optional Add-ons (herbs), are fully compliant with Paleo guidelines."
+  },
+  {
+    "trace_id": "18_3",
+    "query": "Low-sodium soup recipe - my doctor says I need to cut back",
+    "dietary_restriction": "low-sodium",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the low-sodium restriction. It correctly builds flavor from herbs and vegetables rather than salt. The most critical ingredient, chicken broth, is explicitly specified as \"no-salt-added,\" which is the correct choice for this diet. The \"Tips & Substitutions\" section provides a compliant alternative by suggesting \"low-sodium\" broth if the no-salt-added version is unavailable. No salt is listed as an ingredient, and all other components of the recipe, including the optional add-ons, are naturally low in sodium. The recipe successfully adheres to the restriction throughout."
+  },
+  {
+    "trace_id": "1_1",
+    "query": "I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast",
+    "dietary_restriction": "vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails on two counts. First, the main ingredient list includes generic \"granola.\" Many common, store-bought granolas contain honey, which is an animal product and therefore not vegan. Per Policy Rule 2, an ambiguous ingredient where the default version is non-compliant constitutes a FAIL. The recipe should have specified \"vegan granola.\"\n\nSecond, the \"Tips & Substitutions\" section suggests that \"a crumbled digestive biscuit can add a nice crunch.\" Standard digestive biscuits, particularly the most common brands, typically contain dairy products like milk powder or butter, making them non-vegan. Suggesting a non-compliant ingredient as a substitute is a violation per Policy Rule 5. A violation anywhere in the response, even in an optional suggestion, makes the entire response a FAIL."
+  },
+  {
+    "trace_id": "17_2",
+    "query": "I want paleo bread but every recipe I've tried is terrible",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the Paleo diet, which excludes grains, legumes, dairy, and refined sugar. All ingredients in the main recipe are compliant: almond flour and arrowroot starch are used instead of grain-based flours; coconut oil is used instead of dairy butter; and there are no added sugars or legumes. The substitutions suggested in the \"Tips & Substitutions\" section (avocado oil, olive oil) are also Paleo-compliant. The \"Optional Add-ons\" (sesame seeds, poppy seeds, sunflower seeds) are all acceptable on a Paleo diet. There are no violations anywhere in the response."
+  },
+  {
+    "trace_id": "50_5",
+    "query": "Something that feels indulgent but isn't terrible for me",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a diabetic-friendly diet. The core ingredients consist of salmon (a source of lean protein and healthy fats), asparagus (a non-starchy, low-carb vegetable), and flavorings like olive oil, garlic, and lemon, all of which have a very low glycemic index and are suitable for managing blood sugar. The recipe avoids all sources of refined carbohydrates and added sugars. The \"Tips & Substitutions\" section suggests other non-starchy vegetables (broccoli, green beans), which are also excellent choices for a diabetic diet. The \"Optional Add-ons\" (dill, parsley) are also compliant. The entire response adheres to the dietary restriction."
+  },
+  {
+    "trace_id": "10_1",
+    "query": "I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?",
+    "dietary_restriction": "pescatarian",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails because it suggests a non-compliant ingredient. The ingredient list offers \"chicken/vegetable broth\" as an alternative to white wine. Chicken broth is made from chicken, which is meat and is explicitly forbidden in a pescatarian diet. The \"Tips & Substitutions\" section repeats this error by suggesting, \"Use an equal amount of chicken broth, vegetable broth...\" as a substitute for wine. Per Policy Rule 1 and Policy Rule 5, suggesting a non-compliant ingredient, even as an option or a substitution, results in a FAIL."
+  },
+  {
+    "trace_id": "17_4",
+    "query": "I want paleo bread but every recipe I've tried is terrible",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the paleo dietary restriction. The paleo diet excludes grains, legumes, dairy, refined sugar, and processed foods. \n\n1.  **Grains:** The recipe correctly uses almond flour and tapioca starch, which are derived from nuts and a root vegetable (cassava), respectively. These are common and accepted grain-free flours in paleo baking.\n2.  **Dairy:** The recipe uses oil (olive or avocado) instead of butter or milk, making it dairy-free.\n3.  **Legumes:** No legumes (like beans, peanuts, or soy) are included.\n4.  **Refined Sugar:** The recipe contains no added sugars or sweeteners.\n5.  **Processed Foods:** All ingredients are compliant with the paleo framework. \n\nThe \"Tips & Substitutions\" section suggests arrowroot starch, another paleo-compliant root starch. The \"Optional Add-ons\" suggest herbs, which are also paleo. The entire response is free of violations."
+  },
+  {
+    "trace_id": "37_4",
+    "query": "Sugar-free dessert that doesn't taste like sadness",
+    "dietary_restriction": "sugar-free",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the sugar-free restriction. The definition of sugar-free is \"No added sugars or high-sugar ingredients (including brown sugar, maple syrup, honey, agave).\" This recipe contains no added sugars; all sweetness comes from whole, ripe bananas. While bananas contain natural sugar, they are a whole food, and the rule's parenthetical examples all refer to concentrated, added sweeteners. This implies the restriction targets added sugars, not the intrinsic sugar in whole fruits. All other ingredients, such as the \"unsweetened cocoa powder\" and the optional \"unsweetened peanut butter,\" are specified correctly to be free of added sugar. Therefore, the entire response is compliant."
+  },
+  {
+    "trace_id": "12_2",
+    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe is presented as diabetic-friendly, which requires controlled carbohydrates and low-glycemic ingredients. The \"Tips & Substitutions\" section suggests that \"quick-cooking oats\" can be used as a substitute for rolled oats. Quick-cooking (or instant) oats are more processed and have a higher glycemic index (GI) than rolled oats, meaning they are absorbed faster and can cause a more rapid spike in blood sugar. Suggesting a higher-GI ingredient as an alternative in a recipe meant to be diabetic-friendly is a direct violation of the dietary restriction's principles. Per Policy Rule 5, a non-compliant substitution suggestion is a FAIL."
+  },
+  {
+    "trace_id": "57_5",
+    "query": "Vegetarian protein that isn't beans - I hate beans",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegetarian diet. All ingredients, including tofu, broccoli, soy sauce, and the choice between maple syrup and honey, are vegetarian. The optional add-ons (sriracha) and suggested substitutions (tamari, other vegetables) are also vegetarian. The recipe does not contain any meat or fish, adhering to the definition of a vegetarian diet."
+  },
+  {
+    "trace_id": "14_2",
+    "query": "Gluten-free pizza dough that actually tastes good and isn't cardboard",
+    "dietary_restriction": "gluten-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the gluten-free dietary restriction. The primary ingredient is a \"gluten-free all-purpose flour blend,\" and the recipe correctly notes the importance of xanthan gum for structure. All other ingredients in the main recipe (yeast, sugar, salt, water, egg, olive oil) are naturally gluten-free. The \"Tips & Substitutions\" section offers compliant alternatives, such as using honey or maple syrup instead of sugar, both of which are gluten-free. The \"Optional Add-ons\" section suggests garlic powder and dried herbs, which are also inherently gluten-free. The entire response, including all suggestions, adheres strictly to the gluten-free requirement."
+  },
+  {
+    "trace_id": "44_1",
+    "query": "I'm mostly vegetarian but I eat fish sometimes",
+    "dietary_restriction": "pescatarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe adheres to the pescatarian diet, which allows fish and seafood but excludes other meats. The main protein in the recipe is salmon, which is a fish. All other ingredients, such as broccoli, olive oil, garlic, and lemon, are plant-based and therefore compliant. The \"Tips & Substitutions\" section suggests other fish (cod, halibut) and vegetables (asparagus, green beans), all of which are permitted. The \"Optional Add-ons\" suggest serving with quinoa or brown rice, which are also compliant. The entire response is free of any non-pescatarian ingredients like poultry or red meat."
+  },
+  {
+    "trace_id": "49_5",
+    "query": "I'm flexitarian leaning vegan",
+    "dietary_restriction": "vegan",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests serving the curry with \"naan bread\". Traditional and most commercially available naan bread contains dairy products like yogurt, milk, or ghee (clarified butter), which are animal products and therefore not vegan. According to Policy Rule 2, when an ambiguous ingredient's most common or default version is non-compliant, it constitutes a FAIL. The recipe should have specified \"vegan naan bread\" to be compliant."
+  },
+  {
+    "trace_id": "26_1",
+    "query": "I'm on a sugar-free diet but I want to make candy",
+    "dietary_restriction": "sugar-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with the sugar-free restriction. The primary ingredient, chocolate chips, is explicitly specified as \"sugar-free chocolate chips (often sweetened with stevia or erythritol)\", which is appropriate. All other ingredients in the main recipe (coconut oil, almonds, salt) are inherently sugar-free. The \"Tips & Substitutions\" section suggests other nuts or seeds, all of which are compliant. The \"Optional Add-ons\" suggest vanilla extract and cinnamon, which are also sugar-free. No part of the response contains or suggests any added sugars like honey, maple syrup, or granulated sugar."
+  },
+  {
+    "trace_id": "12_3",
+    "query": "Diabetic-friendly dessert that doesn't use artificial sweeteners",
+    "dietary_restriction": "diabetic-friendly",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails to adhere to the \"diabetic-friendly\" restriction, specifically the principle of \"controlled carbohydrates.\" A single serving of this dessert, which consists of one whole medium apple plus oats, contains a significant carbohydrate load. A medium apple alone has approximately 25 grams of carbohydrates, and adding the rolled oats brings the total to around 30 grams per serving. This is too high for a single dessert serving for most individuals managing diabetes, as it represents a carb count closer to a small meal than a controlled-carb treat. While the ingredients have a low glycemic index, the overall quantity of carbohydrates is not appropriately controlled for this dietary restriction."
+  },
+  {
+    "trace_id": "37_5",
+    "query": "Sugar-free dessert that doesn't taste like sadness",
+    "dietary_restriction": "sugar-free",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests adding '1/4 cup of raisins' in the 'Optional Add-ons' section. Raisins are dried grapes and are extremely high in concentrated sugar. The definition for 'sugar-free' is 'No added sugars or high-sugar ingredients'. Raisins are a high-sugar ingredient, and suggesting them as an optional add-on violates the dietary restriction. Per Policy Rule 1, suggesting a non-compliant ingredient, even if optional, is a FAIL."
+  },
+  {
+    "trace_id": "8_5",
+    "query": "My kid needs a nut-free cookie recipe for school but she's super picky and only likes chocolate",
+    "dietary_restriction": "nut-free",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provides a list of ingredients that are inherently nut-free (flour, sugar, butter, eggs, etc.). Crucially, in the \"Tips & Substitutions\" section, it correctly identifies the ingredients that can pose a cross-contamination risk for people with nut allergies and provides a specific instruction: \"For an allergy-safe guarantee, check your chocolate chip and cocoa powder labels to ensure they are processed in a nut-free facility.\" This demonstrates a thorough understanding of what is required to make a recipe truly nut-free and safely guides the user. All other tips and optional add-ons (sea salt, coarse sugar) are also nut-free. The entire response is compliant."
+  },
+  {
+    "trace_id": "40_2",
+    "query": "I'm trying to eat clean but I want pizza",
+    "dietary_restriction": "whole30",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails to adhere to the Whole30 dietary restriction in multiple ways. The Whole30 diet strictly prohibits all grains and dairy. The recipe's core ingredient is a \"whole wheat tortilla,\" which is a grain product and therefore a direct violation. The recipe also calls for \"shredded part-skim mozzarella cheese,\" which is a dairy product and also forbidden on Whole30. Furthermore, the \"Tips & Substitutions\" section suggests using \"whole wheat pita bread\" as an alternative base, which is another grain product and a violation per Policy Rule 5."
+  },
+  {
+    "trace_id": "34_3",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe provided is for a lentil and sweet potato stew. I have evaluated all ingredients and suggestions in the entire response against the vegetarian dietary restriction, which prohibits meat and fish.\n\n- **Main Ingredients:** All listed ingredients (olive oil, onion, carrots, celery, garlic, sweet potato, lentils, spices, vegetable broth, tomatoes) are plant-based and therefore fully compliant with a vegetarian diet.\n- **Steps:** The preparation method involves saut\u00e9ing vegetables and simmering them with lentils and broth. No meat or fish products are used or mentioned.\n- **Tips & Substitutions:** The suggested substitutions (regular potato, butternut squash, different types of lentils, frozen mirepoix) are all vegetarian.\n- **Optional Add-ons:** The suggestion to add fresh spinach is also vegetarian.\n\nThe entire response, from the core recipe to all optional suggestions, is free of meat and fish, adhering strictly to the vegetarian diet."
+  },
+  {
+    "trace_id": "48_3",
+    "query": "Gluten-light recipe - I'm not celiac just sensitive",
+    "dietary_restriction": "gluten-free",
+    "true_label": "FAIL",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe and all its components are fully compliant with a gluten-free diet. The main ingredients (salmon, broccoli, bell pepper, olive oil, lemon, salt, pepper) are all naturally gluten-free. The recipe suggests \"dried oregano or Italian seasoning\"; while some Italian seasoning blends can have anti-caking agents containing gluten, the default version is simply a mix of herbs and is gluten-free, so this passes the \"default version\" test (Policy Rule 2). The \"Tips & Substitutions\" section recommends other gluten-free vegetables (asparagus, zucchini, green beans) and herbs (thyme, dill, parsley). The \"Optional Add-ons\" section suggests serving the meal with quinoa or rice, both of which are gluten-free grains. There are no ingredients or suggestions anywhere in the response that violate the gluten-free restriction."
+  },
+  {
+    "trace_id": "35_1",
+    "query": "Paleo breakfast that I can eat in the car on my commute",
+    "dietary_restriction": "paleo",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe fails because the \"Tips & Substitutions\" section suggests non-compliant ingredients for a paleo diet. The paleo diet excludes processed foods, legumes, dairy, grains, and refined sugar. The recipe suggests using \"diced ham\" as a substitute for sausage. Standard, store-bought diced ham is a processed meat product that typically contains sugar, nitrates, and other non-paleo additives. The default version of this ingredient is not paleo-compliant. Per Policy Rule 5, suggesting a non-compliant substitution is a FAIL. Additionally, the suggestion of generic \"bacon\" without specifying it must be sugar-free and uncured is also problematic, as most common bacon is not paleo."
+  },
+  {
+    "trace_id": "34_5",
+    "query": "Vegetarian meal that has enough protein for my bodybuilder boyfriend",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe suggests adding 'Parmesan cheese' as an optional topping. Traditional Parmesan cheese is made with animal rennet, an enzyme sourced from the stomach lining of a calf, which requires the animal to be slaughtered. This makes it non-vegetarian. According to Policy Rule 2, an ambiguous ingredient where the default version is non-compliant constitutes a violation. The provided examples specifically list 'generic \"Parmesan\" (uses animal rennet)' as an ingredient that should be considered non-compliant. Since the recipe suggests this non-compliant ingredient in the 'Optional Add-ons' section, it is a FAIL based on Policy Rule 1."
+  },
+  {
+    "trace_id": "42_4",
+    "query": "I want something light but filling",
+    "dietary_restriction": "low-carb",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The main recipe consisting of salmon and asparagus is perfectly compliant with a low-carb diet. However, the 'Optional Add-ons' section suggests serving the meal with 'quick-cooking couscous or quinoa.' Both couscous (a wheat product) and quinoa are very high in carbohydrates and are not appropriate for a low-carb diet. A single serving of either of these would contribute a large number of carbs, directly contradicting the dietary restriction. Per Policy Rule 1, if a recipe suggests a non-compliant ingredient as 'optional' or as an 'add-on,' it is a FAIL."
+  },
+  {
+    "trace_id": "40_5",
+    "query": "I'm trying to eat clean but I want pizza",
+    "dietary_restriction": "whole30",
+    "true_label": "FAIL",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe violates the Whole30 dietary restriction in multiple fundamental ways. The Whole30 diet prohibits all grains and dairy. The recipe's core ingredients include \"whole wheat pita breads\" (a grain) and \"shredded part-skim mozzarella cheese\" (a dairy product). Furthermore, the \"Tips & Substitutions\" section reinforces these violations by suggesting other non-compliant ingredients like \"whole wheat tortillas,\" \"whole wheat English muffins,\" \"Provolone,\" and \"Monterey Jack,\" which are all grain or dairy products. Finally, the \"Optional Add-ons\" suggest \"turkey pepperoni,\" a processed meat that is typically not Whole30-compliant due to additives like sugar and nitrates. These ingredients are explicitly forbidden by the Whole30 rules."
+  },
+  {
+    "trace_id": "24_1",
+    "query": "I want a cheeseburger but I'm dairy-free and vegetarian. I know this sounds impossible but I'm really craving the taste and texture of a classic Ameri",
+    "dietary_restriction": "vegetarian",
+    "true_label": "PASS",
+    "predicted_label": "PASS",
+    "reasoning": "The recipe is fully compliant with a vegetarian diet. The core protein is a \"plant-based burger patty,\" which is by definition vegetarian. All other ingredients, including the dairy-free cheese, dairy-free mayonnaise (which is typically egg-based and thus vegetarian), buns, and vegetable toppings, are free of meat and fish. The tips, substitutions, and optional add-ons also contain only vegetarian ingredients. The recipe successfully creates a vegetarian version of a cheeseburger."
+  },
+  {
+    "trace_id": "60_3",
+    "query": "Raw vegan meal that's actually filling",
+    "dietary_restriction": "raw vegan ",
+    "true_label": "PASS",
+    "predicted_label": "FAIL",
+    "reasoning": "The recipe violates the raw vegan dietary restriction. The ingredients list calls for \"ground cumin\" and \"chili powder.\" The most common, default versions of these spices are not raw. Cumin seeds are typically roasted before being ground to enhance their flavor, and chili powder is a blend of spices, including ground chilies, that are often dried using heat. Both processes exceed the raw vegan temperature threshold of 118\u00b0F (48\u00b0C). A compliant recipe would need to specify raw-certified spices or instruct the user on how to make them from raw ingredients. Per Policy Rule 2, using an ambiguous ingredient where the default version is non-compliant constitutes a FAIL."
+  }
+]

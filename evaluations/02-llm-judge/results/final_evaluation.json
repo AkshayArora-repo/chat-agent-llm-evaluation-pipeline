@@ -1,0 +1,16 @@
+{
+  "final_evaluation": {
+    "total_traces_evaluated": 439,
+    "raw_observed_success_rate": 0.5558086560364465,
+    "corrected_success_rate": 0.6256237409335016,
+    "confidence_interval_95": {
+      "lower_bound": 0.5296515047762307,
+      "upper_bound": 0.7275979890112408
+    },
+    "correction_applied": 0.06981508489705512,
+    "judge_metrics_used": {
+      "tpr": 0.821917808219178,
+      "tnr": 0.8888888888888888
+    }
+  }
+}

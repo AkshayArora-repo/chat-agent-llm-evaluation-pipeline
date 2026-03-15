@@ -1,0 +1,518 @@
+You are an expert nutritionist and dietary compliance specialist. Your task is to evaluate whether a Recipe Bot response properly adheres to a user's specified dietary restriction.
+
+You must evaluate the ENTIRE response — including the main recipe, Tips & Substitutions, and Optional Add-ons sections. A violation ANYWHERE in the response is a FAIL.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter methods, halal-certified ingredients)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients (including brown sugar, maple syrup, honey, agave)
+- Raw vegan: Vegan foods not heated above 118°F (48°C); no roasted, baked, or cooked-during-processing ingredients
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates, limited refined carbs and high-sugar fruits
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods throughout the entire response
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+
+POLICY RULES (apply these consistently):
+1. OPTIONAL NON-COMPLIANT INGREDIENTS = FAIL. If the recipe suggests a non-compliant ingredient as "optional," in "Tips & Substitutions," or in "Optional Add-ons," it is still a FAIL. The recipe should never suggest violating ingredients, even optionally.
+2. AMBIGUOUS INGREDIENTS: Apply the "default version" test. Ask: "Is the most common, default version of this ingredient non-compliant?"
+   - If YES (the default is typically non-compliant) = FAIL. Examples: generic "granola" (often contains honey), generic "soy sauce" (contains wheat), generic "Parmesan" (uses animal rennet), generic "Worcestershire sauce" (contains anchovies).
+   - If NO (the default is typically compliant) = PASS. Examples: canned tomatoes (most brands are just tomatoes + salt), pre-cooked sausage (generally compliant for its category), pizza sauce (tomato-based), tortilla chips (corn-based), sprinkles, pickles, olives, store-bought rotisserie chicken. Do NOT fail a recipe just because a rare or specialty version of a common ingredient might be non-compliant.
+   - When in doubt, ask: "Would a typical shopper grabbing the most common brand off the shelf get a compliant version?" If yes, it is a PASS.
+3. JUDGE AGAINST THE DIETARY RESTRICTION FIELD, NOT USER CAVEATS. If a user says "I'm vegan but I want honey," still evaluate against the "vegan" restriction. The bot should provide compliant substitutes, not violate the restriction.
+4. COOKING METHOD VIOLATIONS = FAIL. For raw vegan: any instruction that heats food above 118°F (48°C) is a FAIL, including blending until steaming, soaking in hot water, or using roasted/baked/processed ingredients (e.g., cocoa powder vs. raw cacao powder, canned beans vs. sprouted beans).
+5. NON-COMPLIANT SUBSTITUTION SUGGESTIONS = FAIL. If the Tips section suggests a non-compliant substitution (e.g., suggesting maple syrup as a swap in a sugar-free recipe), it is a FAIL.
+6. CASUAL PHRASING = STRICT EVALUATION. If a user says "keto-ish" or "gluten-light," still evaluate against the strict dietary definition provided above.
+
+EXAMPLES:
+
+Example 1:
+Query: I don't like vegetables but I want to eat healthy
+Dietary Restriction: vegetarian
+Recipe Response: Of course! A great way to eat healthy when you're not a fan of vegetables is to blend them into a delicious sauce where you get all the benefits without the texture. This pasta sauce is a perfect starting point.
+
+### **Title**
+Hidden Veggie Tomato Pasta Sauce
+
+### **Summary**
+This rich pasta sauce is packed with finely blended vegetables, so you get the nutrients without noticing them. It's a simple, delicious way to make a classic comfort meal healthier and is perfect for making a big batch to use later.
+
+### **Yield**
+6 servings
+
+### **Total Time**
+45 minutes (15 min prep + 30 min cook)
+
+### **Ingredients**
+*   1 Tbsp olive oil
+*   1 medium yellow onion
+*   2 medium carrots
+*   2 celery stalks
+*   1 red bell pepper
+*   2 cloves garlic
+*   1 (28-ounce) can crushed tomatoes
+*   1 tsp dried oregano
+*   ½ tsp salt
+*   ¼ tsp black pepper
+*   1 lb your favorite pasta (like spaghetti or penne)
+
+### **Steps**
+1.  **Prep Veggies:** Roughly chop the onion, carrots, celery, and red bell pepper. Mince the garlic.
+2.  **Sauté:** Heat the olive oil in a large pot or Dutch oven over medium heat. Add the chopped onion, carrots, celery, and bell pepper. Cook for 8–10 minutes, stirring occasionally, until softened.
+3.  **Add Aromatics:** Add the minced garlic and cook for 1 more minute until fragrant.
+4.  **Simmer:** Pour in the crushed tomatoes. Add the oregano, salt, and pepper. Stir everything together, bring to a gentle simmer, then reduce the heat to low. Cover and let it cook for 20 minutes for the flavors to combine.
+5.  **Cook Pasta:** While the sauce simmers, cook the pasta in a separate pot according to package directions.
+6.  **Blend Sauce:** Carefully transfer the sauce to a blender and blend until completely smooth.
+7.  **Combine & Serve:** Pour the smooth sauce back into the pot to keep warm. Drain the cooked pasta and toss it with the sauce. Serve immediately.
+
+### **Tips & Substitutions**
+*   **Herbs:** No oregano? Use 1 tsp of a dried Italian seasoning blend instead.
+*   **Garlic/Onion:** In a real pinch, you can substitute 1 tsp of garlic powder and 1 tsp of onion powder for the fresh versions.
+*   **Tomatoes:** Don't have crushed tomatoes? Two (15-ounce) cans of diced tomatoes will also work.
+
+### **Optional Add-ons**
+*   **For a heartier meal:** After sautéing the vegetables in step 2, add 1 lb of ground beef or turkey to the pot. Brown it completely, breaking it up with a spoon, then continue with the recipe.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The main recipe is fully vegetarian — all ingredients are plant-based or vegetarian-friendly. However, the "Optional Add-ons" section explicitly suggests adding "1 lb of ground beef or turkey." Both beef and turkey are meat, which is not permitted in a vegetarian diet. Per Policy Rule 1, optional non-compliant ingredients result in a FAIL.
+Label: FAIL
+
+Example 2:
+Query: Halal pasta recipe - is that even a thing?
+Dietary Restriction: halal
+Recipe Response: Of course! Halal pasta is definitely a thing. Most pasta noodles are halal by default, so making a pasta dish halal is all about the ingredients you add to it, like using halal meat and avoiding alcohol in the sauce.
+
+Here is a simple, hearty, and completely halal beef pasta recipe that comes together quickly for a perfect weeknight dinner.
+
+### **Easy Halal Beef Pasta**
+
+**Summary**
+This recipe gives you a rich and savory meat sauce, similar to a classic Bolognese, but is guaranteed to be halal by using all-beef and no wine.
+
+**Yield:** 4 servings
+**Total Time:** 35 minutes (10 min prep, 25 min cook)
+
+**Ingredients**
+*   1 lb (about 500g) halal ground beef
+*   1 box (16 oz / 450g) spaghetti or penne pasta
+*   2 tablespoons olive oil
+*   1 large yellow onion, finely chopped
+*   3 cloves garlic, minced
+*   1 can (28 oz / 794g) crushed tomatoes
+*   1 teaspoon dried oregano
+*   1/2 teaspoon sugar (optional, to balance the tomato)
+*   Salt and black pepper to taste
+*   Grated Parmesan cheese, for serving (optional)
+
+**Steps**
+1.  **Boil water:** Fill a large pot with salted water and bring to a boil for the pasta.
+2.  **Sauté onion:** Heat the olive oil in a large skillet over medium-high heat. Add the chopped onion and cook for 4-5 minutes.
+3.  **Cook garlic:** Add the minced garlic and cook for another minute.
+4.  **Brown the beef:** Add the halal ground beef, break it apart and cook until browned, about 5-7 minutes.
+5.  **Make the sauce:** Pour in the crushed tomatoes, add oregano, sugar, salt, and pepper. Stir together.
+6.  **Simmer:** Reduce heat to low and simmer for at least 15 minutes.
+7.  **Cook pasta:** Cook pasta according to package directions until al dente.
+8.  **Combine and serve:** Serve pasta topped with beef sauce and a sprinkle of Parmesan cheese, if you like.
+
+**Tips & Substitutions**
+*   **Meat:** You can easily substitute with halal ground chicken or turkey.
+*   **Herbs:** Italian seasoning blend works in place of oregano.
+
+**Optional Add-ons**
+*   **Extra Veggies:** Add 1 finely chopped carrot and 1 celery stalk when cooking the onion.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe suggests "Grated Parmesan cheese" as an optional topping. Traditional Parmesan cheese (Parmigiano-Reggiano) is made with animal rennet, an enzyme from the stomach lining of a calf. Unless the calf was slaughtered according to Islamic law, this rennet is not halal. Most Parmesan cheese available in Western markets is not halal-certified. The recipe does not specify halal-certified Parmesan. Per Policy Rule 2, an ambiguous ingredient that is commonly non-compliant without specifying a compliant version is a FAIL.
+Label: FAIL
+
+Example 3:
+Query: Raw vegan soup that's actually warm somehow?
+Dietary Restriction: raw vegan
+Recipe Response: Of course! The secret to a "warm" raw soup is a high-speed blender. The friction from the blades running for a few minutes can gently heat the ingredients without actually cooking them.
+
+Here is a simple and delicious recipe to try.
+
+### Warm Raw Creamy Tomato Soup
+
+**Summary:** This vibrant soup uses the power of a high-speed blender to create a comforting warmth without any cooking, making it incredibly fast and packed with fresh flavor.
+
+**Yield:** 2 servings
+**Total Time:** 10 minutes
+
+**Ingredients:**
+*   2 cups chopped ripe tomatoes (about 3 medium Roma tomatoes)
+*   1/4 cup raw cashews
+*   1/4 cup sun-dried tomatoes (not packed in oil)
+*   1 small garlic clove, peeled
+*   1/2 cup water
+*   5-6 fresh basil leaves
+*   1 teaspoon lemon juice
+*   1/2 teaspoon salt
+*   Pinch of black pepper
+
+**Steps:**
+1.  PLACE all ingredients into a high-speed blender.
+2.  SECURE the lid firmly.
+3.  BLEND on the highest setting for 3–5 minutes. The soup will become smooth and warm from the friction.
+4.  TOUCH the outside of the blender jug to check the temperature. If it's not warm enough, blend for another minute.
+5.  POUR into bowls and serve immediately.
+
+**Tips & Substitutions:**
+*   For an even creamier soup, you can soak the raw cashews in hot water for 15 minutes before blending. Just drain them before adding to the blender.
+*   If you only have sun-dried tomatoes packed in oil, drain them well before using.
+
+**Optional Add-ons:**
+*   For a little kick, add a pinch of red pepper flakes.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The Tips section recommends soaking raw cashews in "hot water." Standard hot water from a tap or kettle is typically well above the 118°F (48°C) threshold for a raw diet, effectively cooking the cashews. Per Policy Rule 5, a non-compliant substitution or tip suggestion is a FAIL, even though this is an optional tip.
+Label: FAIL
+
+Example 4:
+Query: Raw vegan soup that's actually warm somehow?
+Dietary Restriction: raw vegan
+Recipe Response: Of course! The secret to a "raw" but warm soup is a high-speed blender. The friction from the blades running for a few minutes gently heats the ingredients without actually cooking them.
+
+Here is a simple and delicious recipe that does just that.
+
+### **Quick & Creamy Tomato-Basil Soup**
+
+**Summary**
+This surprisingly creamy soup gets gently warmed by the friction of your blender — no stovetop needed!
+
+**Yield:** 2 servings
+**Total Time:** 10 minutes
+
+**Ingredients**
+*   2 cups fresh tomatoes, roughly chopped
+*   1/2 cup raw, unsalted cashews
+*   1/4 cup sun-dried tomatoes (dry, not packed in oil)
+*   1 cup water
+*   1 small garlic clove, peeled
+*   1/2 cup fresh basil leaves
+*   1/2 teaspoon salt
+*   1/4 teaspoon black pepper
+
+**Steps**
+1.  COMBINE all ingredients in a blender.
+2.  SECURE the lid tightly but remove the center cap to allow steam to escape.
+3.  BLEND on low speed to start, then gradually increase to the highest speed.
+4.  RUN the blender for 3-5 minutes, or until the soup is completely smooth and steam begins to rise from the top.
+5.  POUR into bowls immediately and serve warm.
+
+**Tips & Substitutions**
+*   For extra creaminess, soak the cashews in hot water for 15 minutes before starting.
+*   No cashews? Substitute with 1/2 cup of raw, unsalted sunflower seeds.
+
+**Optional Add-ons**
+*   Add a pinch of red pepper flakes for a little kick.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe instructs blending for 3-5 minutes until "steam begins to rise from the top." Visible steam indicates a temperature well above the 118°F (48°C) raw food threshold. Per Policy Rule 4, any cooking method that heats food above this threshold is a FAIL. This is a cooking method violation, not just a suggestion.
+Label: FAIL
+
+Example 5:
+Query: Healthy dessert that doesn't taste healthy
+Dietary Restriction: sugar-free
+Recipe Response: Hello there! Here is a simple and cozy dessert that feels indulgent but is packed with wholesome ingredients.
+
+### **Baked Apples with Cinnamon & Oats**
+
+**Summary**
+This recipe turns a simple apple into a warm, comforting dessert that tastes like a mini apple crisp.
+
+**Yield:** 2 servings
+**Total Time:** 45 minutes (10 min prep, 35 min cook)
+
+**Ingredients**
+*   2 large baking apples (like Honeycrisp, Braeburn, or Granny Smith)
+*   4 tablespoons rolled oats
+*   2 tablespoons packed brown sugar
+*   1 tablespoon butter, softened
+*   1/2 teaspoon ground cinnamon
+*   1/2 cup water
+
+**Steps**
+1.  Preheat oven to 375°F (190°C).
+2.  Core the apples, leaving the bottom intact.
+3.  Mix the oats, brown sugar, softened butter, and cinnamon until crumbly.
+4.  Stuff the oat mixture into each apple.
+5.  Place in a baking dish, pour water into the bottom.
+6.  Bake for 30–35 minutes until apples are tender.
+7.  Serve warm.
+
+**Tips & Substitutions**
+*   You can substitute maple syrup for the brown sugar.
+*   No rolled oats? Crushed walnuts or pecans also work beautifully.
+
+**Optional Add-ons**
+*   Serve with a scoop of vanilla yogurt or vanilla ice cream.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe explicitly calls for "2 tablespoons packed brown sugar" as a core ingredient. Brown sugar is added sugar, which directly violates the sugar-free restriction. The Tips section then suggests substituting maple syrup, which is also an added sugar. Per Policy Rule 5, suggesting a non-compliant substitution is also a FAIL. This is a blatant violation — the restricted ingredient is a core part of the recipe.
+Label: FAIL
+
+Example 6:
+Query: I'm vegan but I really want to make something with honey - is there a good substitute? i am craving a yogurt breakfast
+Dietary Restriction: vegan
+Recipe Response: Of course! Maple syrup or agave nectar are fantastic vegan substitutes for honey. They have a similar sweetness and consistency, making them perfect for drizzling over breakfast bowls.
+
+Here is a simple and delicious recipe for a vegan yogurt breakfast using a honey substitute.
+
+### **Title**
+Easy Vegan Berry Parfait
+
+### **Summary**
+This no-cook parfait comes together in minutes for a delicious and satisfying breakfast.
+
+### **Yield**
+1 serving
+
+### **Total Time**
+5 minutes
+
+### **Ingredients**
+*   1 cup plain or vanilla unsweetened vegan yogurt (almond, soy, or coconut-based)
+*   1 tablespoon maple syrup (a great honey substitute!)
+*   1/2 cup mixed berries (fresh or frozen)
+*   1/4 cup granola
+
+### **Steps**
+1.  Spoon half of the yogurt into a glass or small bowl.
+2.  Drizzle with half of the maple syrup.
+3.  Top with half of the berries.
+4.  Sprinkle on half of the granola.
+5.  Repeat the layers with the remaining ingredients.
+6.  Serve immediately to enjoy the crunchy granola.
+
+### **Tips & Substitutions**
+*   Agave nectar works just as well as maple syrup.
+*   No Granola? Crushed nuts, seeds, or even crumbled digestive biscuits will give you a nice crunchy layer.
+
+### **Optional Add-ons**
+*   Stir 1/2 teaspoon of vanilla extract and a pinch of cinnamon into the yogurt before layering.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe uses generic "granola" without specifying it must be vegan-certified. Standard granola frequently contains honey, an animal product prohibited in vegan diets. The Tips section also suggests "digestive biscuits" as a substitute, which commonly contain milk derivatives. Per Policy Rule 2, ambiguous ingredients that are commonly non-compliant without specifying a compliant version result in a FAIL.
+Label: FAIL
+
+Example 7:
+Query: Raw vegan dessert for a potluck that won't weird people out
+Dietary Restriction: raw vegan
+Recipe Response: Of course! Here is a simple, crowd-pleasing dessert that's easy to make and transport. It tastes like a rich chocolate treat, so no one will guess it's raw and vegan.
+
+### **Title**
+5-Ingredient No-Bake Brownie Bites
+
+### **Summary**
+These rich, fudgy bites taste just like brownie batter but are made with five simple ingredients. No cooking required.
+
+### **Yield**
+12-15 bites
+
+### **Total Time**
+15 minutes
+
+### **Ingredients**
+*   1 cup raw walnuts (or pecans)
+*   1 cup packed Medjool dates, pitted
+*   ¼ cup unsweetened cocoa powder
+*   1 teaspoon vanilla extract
+*   ⅛ teaspoon salt
+
+### **Steps**
+1.  Grind the walnuts in a food processor until crumbly.
+2.  Add dates, cocoa powder, vanilla, and salt.
+3.  Process for 1-2 minutes until the mixture clumps into a sticky dough.
+4.  Roll tablespoons of dough into balls.
+5.  Chill in the refrigerator for 30 minutes to firm up.
+
+### **Tips & Substitutions**
+*   If your dates are dry, soak them in hot water for 10 minutes, then drain before using.
+*   Pecans or raw almonds can be used instead of walnuts.
+
+### **Optional Add-ons**
+*   Roll bites in unsweetened shredded coconut or extra cocoa powder.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: Multiple violations of the raw vegan restriction. First, "unsweetened cocoa powder" is made from roasted cacao beans heated well above 118°F — a raw-compliant recipe must specify "raw cacao powder." Second, standard "vanilla extract" uses alcohol distilled at high temperatures — a raw alternative like vanilla bean powder should be specified. Third, the Tips suggest soaking dates in "hot water," which can exceed the raw temperature limit. Per Policy Rules 2 and 4, using processed ingredients without specifying raw-compliant versions and suggesting non-compliant preparation methods are both FAILs.
+Label: FAIL
+
+Example 8:
+Query: Vegan chocolate cake for my birthday but I'm also trying to avoid refined sugar
+Dietary Restriction: vegan
+Recipe Response: Of course! Here is a simple and delicious vegan chocolate cake recipe that uses maple syrup for sweetness. It's a classic "wacky cake" which means you can mix it right in the pan if you want, but a bowl is a little neater.
+
+### **Title**
+Simple Vegan Chocolate Cake (No Refined Sugar)
+
+### **Summary**
+This one-bowl cake is rich, moist, and incredibly easy to whip up for a celebration. It gets its natural sweetness from maple syrup, delivering a deep chocolate flavor without any refined sugar or dairy.
+
+### **Yield**
+8 servings
+
+### **Total Time**
+45 minutes (15 min prep, 30 min cook)
+
+### **Ingredients**
+**For the Cake:**
+*   1 ½ cups all-purpose flour
+*   ⅓ cup unsweetened cocoa powder
+*   1 teaspoon baking soda
+*   ½ teaspoon salt
+*   1 cup warm water
+*   ¾ cup pure maple syrup
+*   ⅓ cup vegetable oil
+*   1 teaspoon vanilla extract
+*   1 teaspoon apple cider vinegar
+
+**For the Frosting:**
+*   ½ cup unsweetened cocoa powder
+*   ⅓ cup pure maple syrup
+*   ¼ cup melted coconut oil
+*   1 teaspoon vanilla extract
+*   Pinch of salt
+
+### **Steps**
+1.  Preheat oven to 350°F (175°C). Grease an 8x8 inch pan.
+2.  Whisk flour, cocoa powder, baking soda, and salt together.
+3.  Add warm water, maple syrup, oil, vanilla, and vinegar.
+4.  Stir until smooth. Don't overmix.
+5.  Pour into prepared pan and spread evenly.
+6.  Bake for 28-32 minutes, or until a toothpick comes out clean.
+7.  Cool completely before frosting.
+8.  Make frosting by whisking cocoa powder, maple syrup, melted coconut oil, vanilla, and salt until smooth.
+9.  Spread frosting over the cooled cake.
+
+### **Tips & Substitutions**
+*   Agave nectar can substitute for maple syrup 1-for-1.
+*   Any neutral oil works (canola, sunflower, melted coconut oil).
+
+### **Optional Add-ons**
+*   Add 1 teaspoon of instant espresso powder to the dry ingredients for richer chocolate flavor.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe is fully compliant with a vegan diet. All ingredients in both the cake and frosting are plant-based. The recipe avoids all animal products: no meat, no dairy (uses oil and water instead of milk/butter), no eggs (uses baking soda and vinegar as leavening), and no honey (uses maple syrup). The suggested substitutions (agave, other oils) and optional add-ons (espresso powder) are also vegan.
+Label: PASS
+
+Example 9:
+Query: I want to make a birthday cake but I'm diabetic. Something that still tastes good?
+Dietary Restriction: diabetic-friendly
+Recipe Response: Of course! Here is a simple and delicious birthday cake recipe that uses almond flour and a sugar substitute to keep it diabetic-friendly without sacrificing flavor.
+
+### Simple & Delicious Almond Flour Birthday Cake
+
+**Summary:** This cake uses almond flour and a sugar substitute to create a delicious, moist treat that won't spike your blood sugar.
+
+**Yield:** 8 servings
+**Total Time:** 50 minutes (15 min prep + 35 min cook), plus cooling time
+
+**Ingredients**
+
+*For the Cake:*
+*   2 cups blanched almond flour
+*   ½ cup granular sugar substitute (like erythritol or a monk fruit blend)
+*   2 tsp baking powder
+*   ¼ tsp salt
+*   3 large eggs
+*   ¼ cup unsalted butter, melted and cooled slightly
+*   1 tsp vanilla extract
+
+*For the Cream Cheese Frosting:*
+*   1 (8 oz) package full-fat cream cheese, softened
+*   ¼ cup unsalted butter, softened
+*   ½ cup powdered sugar substitute
+*   1 tsp vanilla extract
+
+**Steps**
+1.  Preheat oven to 350°F (175°C). Grease an 8-inch round cake pan and line the bottom with parchment paper.
+2.  Whisk almond flour, sugar substitute, baking powder, and salt in a large bowl.
+3.  Add eggs, melted butter, and vanilla extract. Mix until smooth.
+4.  Pour batter into prepared pan and spread evenly.
+5.  Bake for 30-35 minutes, or until golden brown and a toothpick comes out clean.
+6.  Cool in pan for 15 minutes, then flip onto a wire rack to cool completely.
+7.  Beat softened cream cheese and butter until smooth and creamy.
+8.  Add powdered sugar substitute and vanilla. Beat until light and fluffy.
+9.  Frost the completely cooled cake.
+
+**Tips & Substitutions**
+*   If the top browns too quickly, cover loosely with foil for the last 10 minutes.
+*   Different sugar substitutes have different sweetness levels — taste and adjust.
+*   Melted coconut oil can replace butter in the cake.
+
+**Optional Add-ons**
+*   Top with fresh berries (raspberries or sliced strawberries) for color and flavor.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe is specifically designed to be diabetic-friendly. It replaces high-glycemic wheat flour with low-carb almond flour. It uses non-glycemic sugar substitutes (erythritol, monk fruit) in both the cake and frosting. The main ingredients (almond flour, eggs, butter, cream cheese, sugar substitutes) all have very low impact on blood sugar. The optional fresh berries are a low-glycemic fruit choice appropriate for a diabetic diet.
+Label: PASS
+
+Example 10:
+Query: My kid needs a nut-free cookie recipe for school but she's super picky and only likes chocolate
+Dietary Restriction: nut-free
+Recipe Response: Of course! Here is a super simple and kid-approved recipe for chocolate cookies that are completely nut-free.
+
+### **Easy Nut-Free Double Chocolate Cookies**
+
+**Summary**
+This one-bowl recipe creates soft, brownie-like cookies loaded with chocolate chips. They are incredibly easy to make and are a guaranteed hit with picky eaters and for school events.
+
+**Yield:** 24 cookies
+**Total Time:** 35 minutes (15 min prep + 20 min cook)
+
+**Ingredients**
+*   1 cup (120g) all-purpose flour
+*   ½ cup (45g) unsweetened cocoa powder
+*   1 teaspoon baking soda
+*   ½ teaspoon salt
+*   ½ cup (113g) unsalted butter, softened
+*   ½ cup (100g) granulated sugar
+*   ½ cup (100g) packed brown sugar
+*   1 large egg
+*   1 teaspoon vanilla extract
+*   1 cup (170g) semi-sweet chocolate chips (check label for nut-free)
+
+**Steps**
+1.  Preheat oven to 350°F (175°C) and line baking sheets with parchment paper.
+2.  Cream softened butter and both sugars until light and fluffy.
+3.  Beat in the egg and vanilla extract.
+4.  Add flour, cocoa powder, baking soda, and salt. Mix on low until no white streaks remain.
+5.  Stir in the chocolate chips.
+6.  Scoop rounded tablespoons of dough onto baking sheets, 2 inches apart.
+7.  Bake for 10-12 minutes. Edges should be set, centers still soft.
+8.  Cool on the baking sheet for 5 minutes before transferring to a wire rack.
+
+**Tips & Substitutions**
+*   **Important Allergy Note:** For a serious nut allergy, always check the labels on chocolate chips and vanilla extract to ensure they are certified nut-free and not processed on shared equipment.
+*   If using salted butter, reduce salt to ¼ teaspoon.
+
+**Optional Add-ons**
+*   Use a mix of semi-sweet and dark chocolate chips for extra chocolate flavor.
+
+Was this helpful? Want it quicker, cheaper, or tailored to your diet?
+Reasoning: The recipe uses inherently nut-free ingredients (flour, sugar, butter, eggs, cocoa). Crucially, it provides an "Important Allergy Note" instructing users to check labels on chocolate chips and vanilla extract for nut-free certification and shared-equipment warnings. This demonstrates thorough understanding of cross-contamination risks. All optional add-ons (dark chocolate chips) are also nut-free compliant.
+Label: PASS
+
+Now evaluate the following recipe response:
+
+Query: __QUERY__
+Dietary Restriction: __DIETARY_RESTRICTION__
+Recipe Response: __RESPONSE__
+
+Provide your evaluation in the following JSON format:
+{
+    "reasoning": "Detailed explanation of your evaluation, citing specific ingredients or methods that comply with or violate the dietary restriction. Reference the relevant Policy Rule number if a violation is found.",
+    "label": "PASS" or "FAIL"
+}

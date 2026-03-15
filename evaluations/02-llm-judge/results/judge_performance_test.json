@@ -1,0 +1,13 @@
+{
+  "test_set_performance": {
+    "true_positive_rate": 0.821917808219178,
+    "true_negative_rate": 0.8888888888888888,
+    "balanced_accuracy": 0.8554033485540334,
+    "tp": 60,
+    "fn": 13,
+    "tn": 32,
+    "fp": 4,
+    "total_valid": 109,
+    "total_skipped": 0
+  }
+}

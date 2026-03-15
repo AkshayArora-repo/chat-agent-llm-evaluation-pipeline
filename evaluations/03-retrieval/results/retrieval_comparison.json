@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "metrics": {
+      "recall_at_1": 0.6321243523316062,
+      "recall_at_3": 0.772020725388601,
+      "recall_at_5": 0.8134715025906736,
+      "recall_at_10": 0.8652849740932642,
+      "mean_reciprocal_rank": 0.7041204046385393,
+      "queries_found": 167,
+      "queries_not_found": 26,
+      "total_queries": 193
+    }
+  },
+  "keywords": {
+    "metrics": {
+      "recall_at_1": 0.6994818652849741,
+      "recall_at_3": 0.8652849740932642,
+      "recall_at_5": 0.9119170984455959,
+      "recall_at_10": 0.9378238341968912,
+      "mean_reciprocal_rank": 0.784634838391315,
+      "queries_found": 181,
+      "queries_not_found": 12,
+      "total_queries": 193
+    }
+  },
+  "rewrite": {
+    "metrics": {
+      "recall_at_1": 0.6062176165803109,
+      "recall_at_3": 0.7772020725388601,
+      "recall_at_5": 0.8341968911917098,
+      "recall_at_10": 0.9067357512953368,
+      "mean_reciprocal_rank": 0.7050024673081668,
+      "queries_found": 175,
+      "queries_not_found": 18,
+      "total_queries": 193
+    }
+  },
+  "expand": {
+    "metrics": {
+      "recall_at_1": 0.5544041450777202,
+      "recall_at_3": 0.689119170984456,
+      "recall_at_5": 0.7461139896373057,
+      "recall_at_10": 0.8652849740932642,
+      "mean_reciprocal_rank": 0.6409963812813554,
+      "queries_found": 167,
+      "queries_not_found": 26,
+      "total_queries": 193
+    }
+  },
+  "best_strategy": "keywords",
+  "recall_at_5_improvement": 0.0984455958549223,
+  "queries_rescued": 16,
+  "queries_degraded": 2
+}

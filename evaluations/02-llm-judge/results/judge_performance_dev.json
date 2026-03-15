@@ -1,0 +1,13 @@
+{
+  "dev_set_performance": {
+    "true_positive_rate": 0.828125,
+    "true_negative_rate": 0.96875,
+    "balanced_accuracy": 0.8984375,
+    "tp": 53,
+    "fn": 11,
+    "tn": 31,
+    "fp": 1,
+    "total_valid": 96,
+    "total_skipped": 0
+  }
+}
